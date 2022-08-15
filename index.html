@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+      <!-- https://fonts.google.com/icons?icon.set=Material+Icons -->
+
+
     <title>Dashboard</title>
 </head>
 
@@ -12,6 +21,9 @@
   <header> 
     <div>
       <div>
+        <span class="material-symbols-outlined">
+          search
+        </span>
         <input type="search" name="searchBar" id="searchBar">
       </div>
       <div>
@@ -20,11 +32,14 @@
         <span>USERNAME</span>
       </div>
       <div>
-        <span>BIG AVATAR</span>
+        <span>Avatar</span>
         <span>Welcome</span>
         <span>Morgan Oakley (@username)</span>
       </div>
+
+
       <div>
+        
         <button>New</button>
         <button>Upload</button>
         <button>Share</button>
@@ -34,35 +49,65 @@
  
   <nav>
     <div>
-      This is the navbar
+      <img src="images/fishAvatarSmall.png" alt="Fish Avatar" class= "fishLogo">
       <ul>
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Messages</li>
-        <li>History</li>
-        <li>Tasks</li>
-        <li>Communities</li>
+        
+
+        <li><span class="material-symbols-outlined">home</span><span class = "navText">Home</span></li>
+        <li><span class="material-symbols-outlined">account_circle</span><span class = "navText">Profile</span></li>
+        <li><span class="material-symbols-outlined">mail</span><span class = "navText">Messages</span></li>
+        <li><span class="material-symbols-outlined">history</span><span class = "navText">History</span></li>
+        <li><span class="material-symbols-outlined">task</span><span class = "navText">Tasks</span></li>
+        <li><span class="material-symbols-outlined">groups</span><span class = "navText">Communities</span></li>
         <br>
-        <li>Settings</li>
-        <li>Support</li>
-        <li>Privacy</li>
+        <li><span class="material-symbols-outlined">settings</span>Settings</li>
+        <li><span class="material-symbols-outlined">question_mark</span>Support</li>
+        <li><span class="material-symbols-outlined">verified_user</span>Privacy</li>
       </ul>
     </div>
   </nav>
-
+  <span class="material-symbols-outlined">
+    
+    </span>
 
   <div class = "mainSpace">
-    
-    <div class = projectContainer>    
-      
-      <div class = projectHeader> <h2>Your projects</h2></div>
-      
-      <div class = "projectRow1">
-        <div class = projectOne>
-          <h2>This is the super project</h2> 
-          <p>This is all the details on the new project. There isn't much to see here right now.
-          </p>
+
+    <div class = "projectsContainer">
+
+      <div class = projectHeader> 
+        My projects
+      </div>
+
+        <div class = projectCard>
+          <div class = "cardHeader">
+            
+            <div class = "projectAvatar">
+              <img src="images/fishAvatarSmall.png" alt="Fish Avatar" class= "fishLogo">
+            </div>
+
+            <div class = "projectName">
+              <h2>Name of Project</h2>
+            </div>
+
+          </div>
+          <div class = "cardBody">
+            <p>There isn't much to see here right now.
+            </p>
+            <img src="images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="Fish Avatar" class= "fishLogo">
+          </div>
+          
         </div>
+
+    </div>
+  </div>
+              
+
+            
+            
+
+
+
+<!-- 
         <div class = projectTwo>
           <h2>This is the super project</h2> 
           <p>This is all the details on the new project. There isn't much to see here right now.
@@ -80,15 +125,10 @@
           <h2>This is the super project</h2> 
           <p>This is all the details on the new project. There isn't much to see here right now.
           </p>
-        </div>
+        </div> -->
 
-      </div>
-
-
-      <div>This is box 2 for projects</div>
-      <div>This is box 3 for projects</div>
-      <div>This is box 4 for projects</div>
-    </div>
+      <!-- </div> -->
+<!--     
 
     <div class = "announcementsContainer">
       <div>Announcements</div>
@@ -100,8 +140,9 @@
     <div class = "trendingContainer">
       <div>Trending</div>
     </div>
-    
-  </div>
+     -->
+
+  
 
 
 </body>
