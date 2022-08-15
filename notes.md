@@ -1,5 +1,16 @@
 
 
+# 8/14 todo
+
+fix body grid and re-place the nav, header, and mainspace.
+
+
+.
+
+
+
+
+
 # THE PLAN
 
 JavaScript Thouhgts
@@ -47,6 +58,27 @@ Use javascript to fill them with things.
 
 
 ## Your Projects
+
+### The Cards
+* background is an image of the app? 
+name of app + picture? Somethign like that?
+Hover gives you information. The description.
+Click goes to the app.
+
+
+## Javascript Card Making
+So...  
+if
+    screenDiv = document.createElement("div");
+    screenDiv.classList.add("screen");
+    workspace2.appendChild(screenDiv);
+
+the code to make and post 1 div.  
+
+
+card1 = document.createElement("div");
+screenDiv.classList.add("screen");
+- add the ID#.  
 
 
 
