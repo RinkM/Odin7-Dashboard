@@ -42,22 +42,33 @@ header{
     color: white;
     background-color: #50757b;
     grid-area: 1 / 2 / 2/ 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
+
+
+.buttons{
+    grid-area: 2 / 2 / 3 / 3
+}
+
 
 .mainSpace{
     display: grid;
-    grid-template: 1fr / 2fr 1fr;
-    background-color: #6d9297;
+    grid-template: 1fr   / 2fr 1fr;
+    background-color: #618288;
     
     /* background-color: #50757b; */
     grid-area: 2 / 2 / 3 / 3;
 }
 
-
+.searchbar{
+    grid-area: 1 / 1 / 2 / 3;
+}
 
 
 .projectsContainer{
-    background-color: #6d9297;
+    background-color: #618288;
     grid-area: 1/1/2/2;
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +92,7 @@ header{
 }
 
 .projectCard{
+    filter:drop-shadow(3px 3px 3px black) ;
     min-width: 190px;
     max-width: 300px;
     padding: 5px;
@@ -149,6 +161,9 @@ header{
     border-radius: 50px;
 }
 
+
+
+
 .rightSideContainer{ 
     background-color: #50757b;
         display: grid;
@@ -158,10 +173,14 @@ header{
         grid-row-gap: 5px;
 }
 .announcementsHeader{
+    text-align: center;
+    font-size : 1.5rem;
+    color: orange;
     grid-area:1 / 1 / 2 / 2}
 
 .announcementsContainer{
-    background-color: white;
+
+    background-color:#50757b;
     color: orange;
     grid-area: 2 / 1 / 3 / 2; 
     display: flex;
@@ -172,20 +191,45 @@ header{
 }
 
 .announcement{
-    
+    width: 90%;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+    margin: 1px;
+    padding:3px;
     height: 33%;
-    border-bottom: 2px solid orange ;
+    /* border-bottom: 2px solid orange ; */
 }
 
+.announcementTitle{
+    font-weight: 400;
+}
+
+.announcementText{
+    font-size: .9rem;
+}
 .trendingHeader{
+    font-size: 1.5rem;
+    color: orange;
+    text-align: center;
     grid-area:3 / 1 / 4/ 2;
 }
 
 .trendingContainer{
     color: orange;
     padding: 15px;
-    background-color: white;
+    background-color:#50757b;
     grid-area: 4 / 1 / 5 / 2;
+}
+
+.trendingItem{
+    background-color: white;
+    margin: 7px 0px;
+    padding:5px;
+    text-align: center;
+    height: 27%;
+    border-radius: 15px;
+
 }
 
 ul{

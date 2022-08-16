@@ -1,12 +1,18 @@
 
 
-# 8/14 todo
+# 8/14 Todo List
 
-fix body grid and re-place the nav, header, and mainspace.
+~~fix body grid and re-place the nav, header, and mainspace.~~
+Header buttons.  move them to other side.
+extend the search bar to fit
+find avatars? logos?
 
+take screenshots of projects. 
+Or an ICON
 
-.
+waht about the css effect / cards?
 
+ohhh man I'm so tired...
 
 
 
