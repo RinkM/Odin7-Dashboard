@@ -2,8 +2,8 @@
 
 body{display: grid;
     /* grid-template: 100px 20% 20% 20% 20% 20% /  150px 20% 20% 20% 20% 20%; */
-    grid-template-columns:190px 3fr ;
-    grid-template-rows: 100px 4fr;
+    grid-template-columns:1fr 5fr ;
+    grid-template-rows: 1fr 6fr;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -18,7 +18,7 @@ nav{
     font-size: 20px;
     color: white;
     background-color: #50757b;
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 1 / 1 / 3 / 2;
 }
 
 .material-symbols-outlined {
@@ -40,35 +40,122 @@ nav{
 header{
     
     color: white;
-    background-color: #50757b;
+    background-color: white;
     grid-area: 1 / 2 / 2/ 3;
+    padding:10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
 }
 
 
+
+.searchBarContainer{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.searchBarr{
+    border-radius: 10px;
+    width: 80%
+}
+
+.smallUserContainer{
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    grid-template-rows: 1fr;
+
+
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    vertical-align: middle;
+    /* line-height: 50px; <-- adjust this */
+    background-color: white;
+    /* margin: 0px 80px 10px;
+    padding: 0px 10px;
+    height:60px;
+    justify-content: space-between; */
+}
+
+.userIdCard{
+    background-color: #fa9566;
+    margin: 5px;
+    grid-area: 1 / 3 / 2 / 4;
+    display:flex;
+    justify-content: space-evenly;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+#notificate{
+    grid-area: 1 / 1 / 2 / 2;
+    line-height: 50px;
+}
+
+.text{
+    vertical-align: middle;
+}
+.welcomeContainer{
+    grid-area: 2 / 1 / 3 / 2;
+
+}
+
 .buttons{
-    grid-area: 2 / 2 / 3 / 3
+    grid-area: 2 / 2 / 3 / 3;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+button{
+ 
+  background-color: #fa9566;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 30px;
+  line-height:30px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 0px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:active{
+    margin:-2px;
+    border: solid 2px #FFFFFF;
+}
+
+button:hover{
+  background-color: #fc824a;
 }
 
 
 .mainSpace{
     display: grid;
     grid-template: 1fr   / 2fr 1fr;
-    background-color: #618288;
+    background-color: wheat;
     
     /* background-color: #50757b; */
     grid-area: 2 / 2 / 3 / 3;
 }
 
-.searchbar{
-    grid-area: 1 / 1 / 2 / 3;
-}
+
 
 
 .projectsContainer{
-    background-color: #618288;
+    background-color: wheat;
     grid-area: 1/1/2/2;
     display: flex;
     flex-wrap: wrap;
@@ -80,7 +167,7 @@ header{
 .projectsHeader{
     margin-left: 20px;
     font-size: 2rem;
-    color: orange
+    color: #fa9566
     /* grid-area: 1/1/2/2 */
     /* font size should match grid size in container */
 }
@@ -96,21 +183,21 @@ header{
     min-width: 190px;
     max-width: 300px;
     padding: 5px;
-    background-color: white;
-    color: orange;
+    background-color: wheat;
+    color: #fa9566;
     grid-area: 2 / 1/ 3/2;
     display:grid;
     margin-left: 5px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr;
-    border-left: 5px solid orange;
+    border-left: 5px solid #fa9566;
     width: 40%;
     border-radius: 15px;
 }
     
 .cardHeader { 
     padding: 0 5px;
-    background-color: white;
+    background-color: wheat;
     grid-area: 1 / 1 / 2 / 2; 
     display: flex;
     flex-direction: row;
@@ -135,7 +222,7 @@ header{
 }
 
 .cardBody {
-    background-color: white;
+    background-color: wheat;
     display:grid; 
     grid-area: 2 / 1 / 3 / 3; 
     grid-template-columns: 1fr 30px 30px 30px;
@@ -165,7 +252,7 @@ header{
 
 
 .rightSideContainer{ 
-    background-color: #50757b;
+    background-color: white;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1.5rem 1fr);
@@ -175,13 +262,13 @@ header{
 .announcementsHeader{
     text-align: center;
     font-size : 1.5rem;
-    color: orange;
+    color: #fa9566;
     grid-area:1 / 1 / 2 / 2}
 
 .announcementsContainer{
 
-    background-color:#50757b;
-    color: orange;
+    background-color:white;
+    color: #fa9566;
     grid-area: 2 / 1 / 3 / 2; 
     display: flex;
     flex-direction: column;
@@ -194,7 +281,7 @@ header{
     width: 90%;
     border-radius: 15px;
     text-align: center;
-    background-color: white;
+    background-color: wheat;
     margin: 1px;
     padding:3px;
     height: 33%;
@@ -210,13 +297,13 @@ header{
 }
 .trendingHeader{
     font-size: 1.5rem;
-    color: orange;
+    color: #fa9566;
     text-align: center;
     grid-area:3 / 1 / 4/ 2;
 }
 
 .trendingContainer{
-    color: orange;
+    color: #fa9566;
     padding: 15px;
     background-color:#50757b;
     grid-area: 4 / 1 / 5 / 2;

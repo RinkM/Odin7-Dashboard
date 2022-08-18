@@ -1,5 +1,17 @@
 
+# 8-17 todo
+fix color for bottom.
+add intro.  Think about message space before projects.
 
+Change nav bar on the left. Make it less items.
+
+Make button open new form for new card.
+New info is posted into console.
+
+About me page. 
+Contact me... other tabs...
+
+make logos the 
 # 8/14 Todo List
 
 ~~fix body grid and re-place the nav, header, and mainspace.~~
@@ -13,6 +25,13 @@ Or an ICON
 waht about the css effect / cards?
 
 ohhh man I'm so tired...
+
+Number of lines coded...
+functions called...
+
+Num Python projects
+num of Javascript Projects??
+
 
 
 
@@ -43,10 +62,18 @@ Use javascript to fill them with things.
 * Magnifying glass icon
 * Do the buttuns function?
     * new post? Project?  Add to the page with Javascript?
+* 
+* 
+* 
+* 
+* 
+* 
+
+
 
 
 ### Top line of Header
-* make the search bar do something?  
+* make the search bar do something?  narrow down the projects?  maybe...
 * Alarm Icon
 * Avatar Icon
 * Username
