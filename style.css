@@ -1,11 +1,46 @@
 
 
-body{display: grid;
-    /* grid-template: 100px 20% 20% 20% 20% 20% /  150px 20% 20% 20% 20% 20%; */
+.mainWindowContainer{
+    /* z-index: 0; */
+    filter: opacity(1);
+    
+    display: grid;
+    /* display: none; */
     grid-template-columns:1fr 5fr ;
     grid-template-rows: 1fr 6fr;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#newProjectContainer{
+    display: none;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index: 1;
+    /* display: flex; */
+    justify-content: center;
+    
+}
+
+.newProjectPopUp{
+    margin-top:16%;
+    border-radius: 15px;
+    background-color: #50757b;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    height:fit-content;
+    padding:60px 40px 80px 40px;
+}
+
+.projectForm{
+    
+
+}
+
+.error{
+    display: none;
 }
 /* 
 div, nav, header{
@@ -38,15 +73,15 @@ nav{
 }
 
 header{
-    
     color: white;
-    background-color: white;
+    background-color: #50757b;
     grid-area: 1 / 2 / 2/ 3;
     padding:10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 10px;
+
 }
 
 
@@ -56,7 +91,11 @@ header{
 }
 .searchBarr{
     border-radius: 10px;
-    width: 80%
+    width: 80%;
+
+    height:2rem;
+
+    font-size: 16px;
 }
 
 .smallUserContainer{
@@ -68,7 +107,7 @@ header{
     display: grid;
     vertical-align: middle;
     /* line-height: 50px; <-- adjust this */
-    background-color: white;
+    background-color: #50757b;
     /* margin: 0px 80px 10px;
     padding: 0px 10px;
     height:60px;
@@ -76,7 +115,8 @@ header{
 }
 
 .userIdCard{
-    background-color: #fa9566;
+    background-color: #50757b;
+    filter:drop-shadow(3px 3px 3px black) ;
     margin: 5px;
     grid-area: 1 / 3 / 2 / 4;
     display:flex;
@@ -102,6 +142,8 @@ header{
     grid-area: 2 / 2 / 3 / 3;
     display:flex;
     justify-content: space-evenly;
+    align-items: center;
+    
 }
 
 button{
@@ -126,7 +168,7 @@ button{
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
-  vertical-align: baseline;
+  vertical-align: middle;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -145,17 +187,13 @@ button:hover{
 .mainSpace{
     display: grid;
     grid-template: 1fr   / 2fr 1fr;
-    background-color: wheat;
-    
-    /* background-color: #50757b; */
+    background-color: white;
     grid-area: 2 / 2 / 3 / 3;
 }
 
 
-
-
 .projectsContainer{
-    background-color: wheat;
+    background-color: white;
     grid-area: 1/1/2/2;
     display: flex;
     flex-wrap: wrap;
@@ -173,31 +211,66 @@ button:hover{
 }
 
 .projectCard:hover{
-    
     filter:drop-shadow(10px 10px 10px black) 
     
 }
 
+/* filter:drop-shadow(10px 10px 10px red)  */
+
+
+.projectCard:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
 .projectCard{
     filter:drop-shadow(3px 3px 3px black) ;
-    min-width: 190px;
-    max-width: 300px;
+    width: 40%;
+    height:250px;
+    /* min-width: 190px;
+    max-width: 300px; */
     padding: 5px;
-    background-color: wheat;
+    background-color: white;
     color: #fa9566;
-    grid-area: 2 / 1/ 3/2;
+    grid-area: 2 / 1 / 3 / 2;
     display:grid;
     margin-left: 5px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr;
     border-left: 5px solid #fa9566;
-    width: 40%;
     border-radius: 15px;
+}
+
+@media only screen and (max-width:1000px) {
+    .projectCard{
+        width:100%;
+        height: 180px;
+    }
+    
 }
     
 .cardHeader { 
     padding: 0 5px;
-    background-color: wheat;
+    background-color: white;
     grid-area: 1 / 1 / 2 / 2; 
     display: flex;
     flex-direction: row;
@@ -222,7 +295,7 @@ button:hover{
 }
 
 .cardBody {
-    background-color: wheat;
+    background-color: white;
     display:grid; 
     grid-area: 2 / 1 / 3 / 3; 
     grid-template-columns: 1fr 30px 30px 30px;
@@ -246,13 +319,14 @@ button:hover{
 .fishLogo{
     width: 50px;
     border-radius: 50px;
+    height: 50px;
 }
 
 
 
 
 .rightSideContainer{ 
-    background-color: white;
+    background-color: #50757b;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1.5rem 1fr);
@@ -267,7 +341,7 @@ button:hover{
 
 .announcementsContainer{
 
-    background-color:white;
+    background-color:#50757b;
     color: #fa9566;
     grid-area: 2 / 1 / 3 / 2; 
     display: flex;
@@ -275,13 +349,14 @@ button:hover{
     align-items: center;
     row-gap: 10px;
     width: 100%;
+    padding-top: 10px;
 }
 
 .announcement{
     width: 90%;
     border-radius: 15px;
     text-align: center;
-    background-color: wheat;
+    background-color: white;
     margin: 1px;
     padding:3px;
     height: 33%;
@@ -321,4 +396,8 @@ button:hover{
 
 ul{
     list-style-type: none;
+}
+
+li{
+    margin: 50px 0px;
 }

@@ -1,3 +1,6 @@
+home
+projects 
+
 
 # 8-17 todo
 fix color for bottom.

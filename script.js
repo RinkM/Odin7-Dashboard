@@ -1,7 +1,7 @@
 let cardLibrary = [{
     "cardNumber": 0,
     "projectName": "Calculator",
-    "projectLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin5-Calculator/blob/main/app.html",
+    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin5-Calculator/blob/main/app.html",
     "projectGithub": "https://github.com/RinkM/Odin5-Calculator",
     "projectDescription": "There isn't much to see here right now. But if there was something to see, it'd be pretty cool to see. What do you think about this thing you want to see but can't?",
     "projectThumb": "images/fishAvatarSmall.png",
@@ -9,7 +9,7 @@ let cardLibrary = [{
     {
     "cardNumber": 1,
     "projectName": "Dogs Without Laps",
-    "projectLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin6-SubscriptionForm/blob/main/index.html",
+    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin6-SubscriptionForm/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin6-SubscriptionForm",
     "projectDescription": "A subscription form. There isn't much to see here right now. But if there was something to see, it'd be pretty cool to see. What do you think about this thing you want to see but can't?",
     "projectThumb": "images/fishAvatarSmall.png",
@@ -17,7 +17,7 @@ let cardLibrary = [{
     {
     "cardNumber": 2,
     "projectName": "Sketch an Etch",
-    "projectLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin4-Drawing/blob/main/index.html",
+    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin4-Drawing/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin4-Drawing",
     "projectDescription": "A drawing app. There isn't much to see here right now. But if there was something to see, it'd be pretty cool to see. What do you think about this thing you want to see but can't?",
     "projectThumb": "images/fishAvatarSmall.png",
@@ -25,19 +25,52 @@ let cardLibrary = [{
     {
     "cardNumber": 3,
     "projectName": "Rock, Paper, Scissors",
-    "projectLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin3-RPS/blob/main/index.html",
+    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin3-RPS/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin3-RPS",
     "projectDescription": " RPS. There isn't much to see here right now. But if there was something to see, it'd be pretty cool to see. What do you think about this thing you want to see but can't?",
     "projectThumb": "images/fishAvatarSmall.png",
     }
 ]
 
+const projectForm = document.getElementById('newProjectContainer')
+const mainWindow = document.getElementById('mainWindow')
+
+const newProjectBtn = document.getElementById('newProjectBtn')
+const removeProjectBtn = document.getElementById('removeProjectBtn')
+const cancelBtn = document.getElementById('cancelBtnId')
 
 
 
+newProjectBtn.addEventListener('click', ()=>{
+    projectForm.style.display="flex"
+    mainWindow.style.filter = "opacity(.5)";
+}
+ )
 
-    let projectSpace = document.getElementsByClassName("projectsContainer")[0];
-// let projectName = document.getElementsByClassName("projectName")[0];
+cancelBtn.addEventListener('click', ()=>{
+    projectForm.style.display="none"
+    mainWindow.style.filter = "opacity(1)";
+}
+ )
+
+
+ removeProjectBtn.addEventListener('click', ()=>{
+    const allCards = document.querySelectorAll(".projectCard");
+    console.log(allCards[1])
+    
+    allCards.forEach(element=> (
+        element.style.filter = "drop-shadow(3px 3px 3px red)")
+    );
+    // projectForm.style.display="flex"
+    // mainWindow.style.filter = "opacity(.5)";
+}
+ )
+
+    // if (verify()){alert("Thanks for your interest! We will contact you soon.")}
+    // })
+    
+let projectSpace = document.getElementsByClassName("projectsContainer")[0];
+let projectName = document.getElementsByClassName("projectName")[0];
 
 // projectName.textContent = card.projectName
 
@@ -61,7 +94,7 @@ function cardBuilder(card){
     projectName.textContent = card.projectName
 
     avatarLink = document.createElement("a");
-    avatarLink.href = `${card.projectLink}`
+    avatarLink.href = `${card.previewLink}`
     avatarLink.classList.add("imgProjectAvatar");
 
     imgAvatar = document.createElement('img');
@@ -109,8 +142,44 @@ function cardBuilder(card){
 }
 
 
-const makeCards = cardLibrary.map(card=> {
+const makeCards = cardLibrary.map((card)=> {
     cardBuilder(card)
-    }
-    )
+})
 
+function ClearCards(){
+    projectSpace.innerHTML=""
+}
+
+
+// function makesCards() {
+//     cardLibrary.map((card)=> {
+//     cardBuilder(card)
+// })
+// }
+
+
+let userInfo = {}
+
+const form = document.getElementById('newProjectForm');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const entries = formData.entries();
+    userInfo["cardNumber"] = cardLibrary.length
+    userInfo["projectThumb"] = "images/fishAvatarSmall.png"
+    for (let input of entries) {
+        (userInfo[input[0]] = input[1]);
+    }
+    cardLibrary.unshift(userInfo)
+    ClearCards()
+    cardLibrary.map((card)=> {
+        cardBuilder(card)
+    })
+    
+    projectForm.style.display= "none"
+    mainWindow.style.filter = "opacity(1)";
+
+
+
+})
