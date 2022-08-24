@@ -1,6 +1,8 @@
 home
 projects 
 
+From Projects Tab : 
+From here, you can access all my projects. Click on a card to open the app. Click on the GitHub logo to see the code.
 
 # 8-17 todo
 fix color for bottom.
