@@ -1,3 +1,28 @@
+https://preview.colorlib.com/#jackson
+https://colorlib.com/wp/template/jackson/
+
+
+<a href="#" data-nav-section="home">Home</a>
+
+
+<ul>
+<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+<li class=""><a href="#" data-nav-section="about">About</a></li>
+<li><a href="#" data-nav-section="services">Services</a></li>
+<li><a href="#" data-nav-section="skills">Skills</a></li>
+<li><a href="#" data-nav-section="education">Education</a></li>
+<li><a href="#" data-nav-section="experience">Experience</a></li>
+<li><a href="#" data-nav-section="work">Work</a></li>
+<li><a href="#" data-nav-section="blog">Blog</a></li>
+<li><a href="#" data-nav-section="contact">Contact</a></li>
+</ul>
+
+
+<section id="colorlib-hero" class="js-fullheight" data-section="home" style="height: 327px;">
+
+<section class="colorlib-about" data-section="about">
+
+
 home
 projects 
 
