@@ -69,7 +69,7 @@ cancelBtn.addEventListener('click', ()=>{
     // if (verify()){alert("Thanks for your interest! We will contact you soon.")}
     // })
     
-let projectSpace = document.getElementsByClassName("projectsContainer")[0];
+let projectSpace = document.getElementsByClassName("projectCardsContainer")[0];
 let projectName = document.getElementsByClassName("projectName")[0];
 
 // projectName.textContent = card.projectName

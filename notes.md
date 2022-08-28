@@ -1,3 +1,73 @@
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+div{
+  border: 4px solid red;
+  width:100px;
+  height: 100px;
+  
+}
+
+.hex {
+  cursor: pointer;
+/*   fill-opacity: 0.4; */
+  stroke: #000;
+  stroke-width: 1;
+}
+
+#color-fill .hex {
+  fill: #ffff00;
+}
+
+.hex:hover {
+  fill-opacity: .4;
+  stroke: #ff0000;
+  stroke-width: 5;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+}
+
+.hex {
+  transition: transform, fill-opacity, stroke-width;
+  -webkit-transition: transform, fill-opacity, stroke-width;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+
+
+<p>A few examples of hexagons with inline SVG (via HTML5). Also shows some CSS transitions of SVG attributes.</p>
+<!-- 
+<svg xmlns="http://www.w3.org/2000/svg"  width="25" height="25" viewBox="0 0 64 64">
+<polygon fill="#F3BC23" stroke="#F3BC23" stroke-width="1" points="30,4,4,60, 60,60"/>
+  
+<text x="31" y="50" text-anchor="middle" fill="white" font-size="30">H</text>
+ </svg>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 64 64">
+  <polygon fill="#F3BC23" stroke="#F3BC23" stroke-width="1" points="30,4,4,60,60,60"/>
+    <text x="31" y="50" text-anchor="middle" fill="white" font-size="30">H</text>
+    
+  
+ -->
+<br>
+<div>
+<svg class = "hex" height="110" width="100">
+  <polygon 
+points="50 3,100 28,100 75, 50 100,3 75,3 25" 
+stroke="black" fill="yellow" stroke-width="5"/>
+<text class = "textNohover" x="50" y="50" text-anchor="middle" fill="blue" font-size="30">X</text>
+
+<text class = "textNohover" x="50" y="50" text-anchor="middle" fill="blue" font-size="30">H</text>
+</svg>
+  </div>
+
+
+
+
 https://preview.colorlib.com/#jackson
 https://colorlib.com/wp/template/jackson/
 
