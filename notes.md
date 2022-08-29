@@ -1,3 +1,22 @@
+## CSS Hex grid with GRID
+https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/
+
+
+
+# credits
+library photo 
+Image by <a href="https://pixabay.com/users/elifrancis-1160677/?utm_source=link-attribution&amp;utm_medium=referrasl&amp;utm_campaign=image&amp;utm_content=1163695">Eli Digital Creative</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1163695">Pixabay</a>
+
+
+Color Pencils
+Photo by <a href="https://unsplash.com/@kellitungay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelli Tungay</a> on <a href="https://unsplash.com/s/photos/education?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+  Color Pencils with blue background and vertical
+  Photo by <a href="https://unsplash.com/@tamanna_rumee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tamanna Rumee</a> on <a href="https://unsplash.com/s/photos/education?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
 }
