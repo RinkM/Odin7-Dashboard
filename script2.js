@@ -3,7 +3,7 @@ let cardLibrary = [{
     "projectName": "Calculator",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin5-Calculator/blob/main/app.html",
     "projectGithub": "https://github.com/RinkM/Odin5-Calculator",
-    "projectDescription": "There isn't much to see here right now. But if there was something to see, it'd be pretty cool to see. What do you think about this thing you want to see but can't?",
+    "projectDescription": "A fully working calculator. Created with JS, HTML, and CSS",
     "projectThumb": "images/fishAvatarSmall.png",
     },
     {
@@ -11,7 +11,7 @@ let cardLibrary = [{
     "projectName": "Dogs Without Laps",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin6-SubscriptionForm/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin6-SubscriptionForm",
-    "projectDescription": "A subscription form. There isn't much to see here right now. But if there was something to see, it'd be pretty cool to see. What do you think about this thing you want to see but can't?",
+    "projectDescription": "A subscription form to a fake site. Created with JS, HTML, and CSS",
     "projectThumb": "images/fishAvatarSmall.png",
     },
     {
@@ -19,7 +19,7 @@ let cardLibrary = [{
     "projectName": "Sketch an Etch",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin4-Drawing/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin4-Drawing",
-    "projectDescription": "A drawing app. There isn't much to see here right now. But if there was something to see, it'd be pretty cool to see. What do you think about this thing you want to see but can't?",
+    "projectDescription": "A drawing app. Created with JS, HTML, and CSS",
     "projectThumb": "images/fishAvatarSmall.png",
     },
     {
@@ -27,7 +27,7 @@ let cardLibrary = [{
     "projectName": "Rock, Paper, Scissors",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin3-RPS/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin3-RPS",
-    "projectDescription": " RPS. There isn't much to see here right now. But if there was something to see, it'd be pretty cool to see. What do you think about this thing you want to see but can't?",
+    "projectDescription": "Rock, Paper, Scissors. Created with JS, HTML, and CSS",
     "projectThumb": "images/fishAvatarSmall.png",
     }
 ]
@@ -38,6 +38,8 @@ const mainWindow = document.getElementById('mainWindow')
 const newProjectBtn = document.getElementById('newProjectBtn')
 const removeProjectBtn = document.getElementById('removeProjectBtn')
 const cancelBtn = document.getElementById('cancelBtnId')
+
+// const hexagonWrap = document.getElementById('jsHexagon')
 
 
 
@@ -73,6 +75,22 @@ let projectSpace = document.getElementsByClassName("projectCardsContainer")[0];
 let projectName = document.getElementsByClassName("projectName")[0];
 
 // projectName.textContent = card.projectName
+
+
+
+// Try to make hexes
+// function hexBuilder(){
+//     hex = document.createElement('use');
+//     hex.setAttribute("xlink:href", '#pod');
+//     hex.setAttribute("transform","translate(50, 50)")
+//     hexagonWrap.appendChild(hex);
+//     console.log(hex)
+// }
+
+
+
+
+
 
 
 

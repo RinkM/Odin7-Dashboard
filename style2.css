@@ -1,3 +1,40 @@
+/* below are the hexagon css info. */
+
+/* grid styling */
+use {
+    transition: 0.4s;
+    cursor: pointer;
+    fill: transparent;
+  }
+  .pod-wrap use:hover {
+    fill: #000000;
+  }
+  .pod-wrap{
+    
+  }
+  
+  /* other styling */
+  svg {
+    width: 600px;
+    border: 1px red solid;
+    flex: 1;
+  }
+  a {
+    color: #ccc;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.4s;
+  }
+  a:hover {
+    color: #333;
+  }
+
+
+
+
+/* Below are the links.  May need to change when other links are used... */
+
+
 a:link {
     text-decoration: none;
     color:black
@@ -9,7 +46,7 @@ a:link {
   }
   
   a:hover {
-    text-decoration:wavy;
+    text-decoration:none;
   }
   
   a:active {
@@ -48,6 +85,8 @@ nav{grid-area: 1 / 1 / 2 / 2;
     /* #3c5f65 */
 }
 
+.navText{text-align: center;}
+
 .navFixed{
     width: 200px;
     position:fixed;
@@ -55,6 +94,10 @@ nav{grid-area: 1 / 1 / 2 / 2;
 
 ul{
     list-style-type: none;
+}
+li{
+    display: inline-block;
+    height:40px
 }
 
 .material-symbols-outlined {
@@ -69,6 +112,8 @@ ul{
 }
 
 .topCorner{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height:175px;
 }
@@ -86,9 +131,11 @@ ul{
 /* Projects Page  */
 
 .projectCardsContainer{
+    background-color:white;
     display: flex;
     flex-wrap: wrap;
     gap:25px 25px;
+    padding-top: 10px;
 }
 
 .projectCard{
@@ -127,10 +174,13 @@ ul{
 }
 
 
-
+.orange{
+    color: #fea362;
+}
 
 .rightContainer{
-    margin:5px;
+    margin:-5px;
+    margin-top:-22px;
     grid-area: 1 / 2 / 2 / 3;
 }
 
@@ -147,7 +197,45 @@ ul{
 }
 
 
+.homeContainer{
+    text-align: right;
+    font-size: 2rem;
+    padding:25px;
+    background-image: url("images/books.jpg");
+}
 
+.aboutContainer{
+display: grid;
+    background-image: url("images/whiteBG-pencils.jpg");
+    background-position: -680px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+
+.aboutText{
+    padding-left: 10px;
+    font-size: 1.2rem;
+    grid-area:1 / 1 / 2 / 2;
+}
+.devLogo{
+    width:auto;
+    height: 100px;
+}
+
+
+.aboutCardsSpace{
+    grid-area: 2 / 1 / 3 /2;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* column-gap:10px ; */
+    
+}
+
+.aboutCard{
+    height:100px;
+
+}
 
 
 
@@ -165,3 +253,7 @@ footer {
     border-radius: 50px;
     margin-right: .5em;
 }
+
+
+
+
