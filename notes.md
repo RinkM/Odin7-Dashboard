@@ -1,9 +1,27 @@
+
+
+
+      <h2>Email : mrinkert@gmail.com </h2>
+      <h2>Phone : 303 809 7540</h2>
+      <h2>LinkedIn: I have it somewhere...</h2>
+      <h2>Anything else?</h2>
+
 ## CSS Hex grid with GRID
 https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/
 
 
 
 # credits
+
+Photo by Eva Bronzini: https://www.pexels.com/photo/word-idea-stamped-on-paper-6475578/
+
+
+Tornup edged paper - Photo by <a href="https://unsplash.com/@marcusurbenz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marcus Urbenz</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+notecard+sticky <a href="https://www.freepik.com/free-photo/paper-sticky-notes_1324669.htm?query=note%20card">Image by kstudio</a> on Freepik
+
+
 library photo 
 Image by <a href="https://pixabay.com/users/elifrancis-1160677/?utm_source=link-attribution&amp;utm_medium=referrasl&amp;utm_campaign=image&amp;utm_content=1163695">Eli Digital Creative</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1163695">Pixabay</a>
 
