@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="style2.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Mali&family=Permanent+Marker&family=Roboto+Slab:wght@300;900&display=swap" rel="stylesheet">
+
+
     <title>Dashboard</title>
 </head>
 
@@ -20,7 +29,7 @@
       <div class = "topCorner">
         <img src="images/fishAvatarSmall.png" alt="Fish Avatar" class= "cornerFish">
       </div>
-      <div class = "navText">
+      <div class = "navText fontWeight">
         Mike Rinkert
         <br>
         Software Developer Language Teacher
@@ -64,10 +73,10 @@
     <div class = "homeContainer content" data-section="home">
       <div class = "homeText">
         <p><h1 class = "orange">Hello.</h1></p>
-        <p>I am Mike Rinkert.  </p>
-        <p>A programmer. </p> 
-        <p>An educator.</p>
-        <p>Welcome to my project library. Feel free to look around.</p>
+        <p>I am Mike Rinkert  </p>
+        <p>A Programmer and Educator</p> 
+        <p>Welcome to my <a href="#projectAnchor" rel="noopener"><span class = "orange">library</span></a> </p>
+        <p>Feel free to look around</p>
       </div>
       <div>
 <!--         
@@ -142,11 +151,14 @@
       <div class = "projectContainer content" data-section="projects">
         <a id="projectAnchor" class = "anchor" data-hs-anchor="true"></a>
         
-        <div class = "projectsHeader"><h1>My Projects</h1></div>
-        <div class = "buttons">
+        <div class = "projectsHeader centerText"><h1>Projects</h1></div>
+        
+
+        <div class = "buttons invisible">
           <button id = "newProjectBtn">New Project</button>
           <button id = "removeProjectBtn">Remove Project</button>
         </div>
+
         <!-- projectCardsContainer interacts with the Javascript to make the cards.  -->
         <div class = "projectCardsContainer">
           
@@ -190,6 +202,7 @@
             </div>
           </div>
         </div>
+        
       </div>
 
     <div class = "contactContainer content" data-section="contact">
