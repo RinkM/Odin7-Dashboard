@@ -1,134 +1,12 @@
 
 
-
-      <h2>Email : mrinkert@gmail.com </h2>
-      <h2>Phone : 303 809 7540</h2>
-      <h2>LinkedIn: I have it somewhere...</h2>
-      <h2>Anything else?</h2>
-
-## CSS Hex grid with GRID
-https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/
-
-
-
-# credits
-
-Photo by Eva Bronzini: https://www.pexels.com/photo/word-idea-stamped-on-paper-6475578/
-
-
-Tornup edged paper - Photo by <a href="https://unsplash.com/@marcusurbenz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marcus Urbenz</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-
-notecard+sticky <a href="https://www.freepik.com/free-photo/paper-sticky-notes_1324669.htm?query=note%20card">Image by kstudio</a> on Freepik
-
-
-library photo 
-Image by <a href="https://pixabay.com/users/elifrancis-1160677/?utm_source=link-attribution&amp;utm_medium=referrasl&amp;utm_campaign=image&amp;utm_content=1163695">Eli Digital Creative</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1163695">Pixabay</a>
-
-
-Color Pencils
-Photo by <a href="https://unsplash.com/@kellitungay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelli Tungay</a> on <a href="https://unsplash.com/s/photos/education?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-
-  Color Pencils with blue background and vertical
-  Photo by <a href="https://unsplash.com/@tamanna_rumee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tamanna Rumee</a> on <a href="https://unsplash.com/s/photos/education?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-
-
-body {
-  font-family: "PT Sans", "Arial", sans-serif;
-}
-
-div{
-  border: 4px solid red;
-  width:100px;
-  height: 100px;
-  
-}
-
-.hex {
-  cursor: pointer;
-/*   fill-opacity: 0.4; */
-  stroke: #000;
-  stroke-width: 1;
-}
-
-#color-fill .hex {
-  fill: #ffff00;
-}
-
-.hex:hover {
-  fill-opacity: .4;
-  stroke: #ff0000;
-  stroke-width: 5;
-  transform: scale(0.9);
-  -webkit-transform: scale(0.9);
-  transform-origin: 50% 50%;
-  -webkit-transform-origin: 50% 50%;
-}
-
-.hex {
-  transition: transform, fill-opacity, stroke-width;
-  -webkit-transition: transform, fill-opacity, stroke-width;
-  transition-duration: 1s;
-  -webkit-transition-duration: 1s;
-}
-
-
-
-<p>A few examples of hexagons with inline SVG (via HTML5). Also shows some CSS transitions of SVG attributes.</p>
-<!-- 
-<svg xmlns="http://www.w3.org/2000/svg"  width="25" height="25" viewBox="0 0 64 64">
-<polygon fill="#F3BC23" stroke="#F3BC23" stroke-width="1" points="30,4,4,60, 60,60"/>
-  
-<text x="31" y="50" text-anchor="middle" fill="white" font-size="30">H</text>
- </svg>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 64 64">
-  <polygon fill="#F3BC23" stroke="#F3BC23" stroke-width="1" points="30,4,4,60,60,60"/>
-    <text x="31" y="50" text-anchor="middle" fill="white" font-size="30">H</text>
-    
-  
- -->
-<br>
-<div>
-<svg class = "hex" height="110" width="100">
-  <polygon 
-points="50 3,100 28,100 75, 50 100,3 75,3 25" 
-stroke="black" fill="yellow" stroke-width="5"/>
-<text class = "textNohover" x="50" y="50" text-anchor="middle" fill="blue" font-size="30">X</text>
-
-<text class = "textNohover" x="50" y="50" text-anchor="middle" fill="blue" font-size="30">H</text>
-</svg>
-  </div>
-
-
-
-
-https://preview.colorlib.com/#jackson
-https://colorlib.com/wp/template/jackson/
-
-
-<a href="#" data-nav-section="home">Home</a>
-
-
-<ul>
-<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-<li class=""><a href="#" data-nav-section="about">About</a></li>
-<li><a href="#" data-nav-section="services">Services</a></li>
-<li><a href="#" data-nav-section="skills">Skills</a></li>
-<li><a href="#" data-nav-section="education">Education</a></li>
-<li><a href="#" data-nav-section="experience">Experience</a></li>
-<li><a href="#" data-nav-section="work">Work</a></li>
-<li><a href="#" data-nav-section="blog">Blog</a></li>
-<li><a href="#" data-nav-section="contact">Contact</a></li>
-</ul>
-
-
-<section id="colorlib-hero" class="js-fullheight" data-section="home" style="height: 327px;">
-
-<section class="colorlib-about" data-section="about">
-
+# 9-4
+## Major Update Finalized Notes
+### Things to add
+* when orangee tab disappears, three line boxes
+* better pictures for a few project icons
+  - Rock Paper Scissors
+  - React App
 
 home
 projects 
@@ -266,4 +144,94 @@ Announcement column
 Trending column - like twitter…
 
 
+
+
+
+
+
+
+
+
+## CSS Hex grid with GRID
+https://css-tricks.com/hexagons-and-beyond-flexible-responsive-grid-patterns-sans-media-queries/
+
+
+
+# credits
+
+Photo by Eva Bronzini: https://www.pexels.com/photo/word-idea-stamped-on-paper-6475578/
+
+
+Tornup edged paper - Photo by <a href="https://unsplash.com/@marcusurbenz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marcus Urbenz</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+notecard+sticky <a href="https://www.freepik.com/free-photo/paper-sticky-notes_1324669.htm?query=note%20card">Image by kstudio</a> on Freepik
+
+
+library photo 
+Image by <a href="https://pixabay.com/users/elifrancis-1160677/?utm_source=link-attribution&amp;utm_medium=referrasl&amp;utm_campaign=image&amp;utm_content=1163695">Eli Digital Creative</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1163695">Pixabay</a>
+
+
+Color Pencils
+Photo by <a href="https://unsplash.com/@kellitungay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelli Tungay</a> on <a href="https://unsplash.com/s/photos/education?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+  Color Pencils with blue background and vertical
+  Photo by <a href="https://unsplash.com/@tamanna_rumee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tamanna Rumee</a> on <a href="https://unsplash.com/s/photos/education?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+
+
+<p>A few examples of hexagons with inline SVG (via HTML5). Also shows some CSS transitions of SVG attributes.</p>
+<!-- 
+<svg xmlns="http://www.w3.org/2000/svg"  width="25" height="25" viewBox="0 0 64 64">
+<polygon fill="#F3BC23" stroke="#F3BC23" stroke-width="1" points="30,4,4,60, 60,60"/>
+  
+<text x="31" y="50" text-anchor="middle" fill="white" font-size="30">H</text>
+ </svg>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 64 64">
+  <polygon fill="#F3BC23" stroke="#F3BC23" stroke-width="1" points="30,4,4,60,60,60"/>
+    <text x="31" y="50" text-anchor="middle" fill="white" font-size="30">H</text>
+    
+  
+ -->
+<br>
+<div>
+<svg class = "hex" height="110" width="100">
+  <polygon 
+points="50 3,100 28,100 75, 50 100,3 75,3 25" 
+stroke="black" fill="yellow" stroke-width="5"/>
+<text class = "textNohover" x="50" y="50" text-anchor="middle" fill="blue" font-size="30">X</text>
+
+<text class = "textNohover" x="50" y="50" text-anchor="middle" fill="blue" font-size="30">H</text>
+</svg>
+  </div>
+
+
+
+
+https://preview.colorlib.com/#jackson
+https://colorlib.com/wp/template/jackson/
+
+
+<a href="#" data-nav-section="home">Home</a>
+
+
+<ul>
+<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+<li class=""><a href="#" data-nav-section="about">About</a></li>
+<li><a href="#" data-nav-section="services">Services</a></li>
+<li><a href="#" data-nav-section="skills">Skills</a></li>
+<li><a href="#" data-nav-section="education">Education</a></li>
+<li><a href="#" data-nav-section="experience">Experience</a></li>
+<li><a href="#" data-nav-section="work">Work</a></li>
+<li><a href="#" data-nav-section="blog">Blog</a></li>
+<li><a href="#" data-nav-section="contact">Contact</a></li>
+</ul>
+
+
+<section id="colorlib-hero" class="js-fullheight" data-section="home" style="height: 327px;">
+
+<section class="colorlib-about" data-section="about">
 
