@@ -23,6 +23,10 @@
 
 <body>
 
+  <nav class = "navSmall">
+
+  </nav>
+
   <nav class = "navLeft">
     <div class = "navFixed">
   
@@ -75,54 +79,15 @@
         <p><h1 class = "orange">Hello.</h1></p>
         <p>I am Mike Rinkert  </p>
         <p>A Programmer and Educator</p> 
-        <p>Welcome to my <a href="#projectAnchor" rel="noopener"><span class = "orange">library</span></a> </p>
+        <p>Welcome to my <span class = "orange"><a href="#projectAnchor" rel="noopener">library</a></span> </p>
         <p>Feel free to look around</p>
       </div>
-      <div>
-<!--         
-        <svg viewBox="0 0 100 100">
-          <defs>
-            <g id="pod">
-              <polygon stroke="#000000" stroke-width="0.5" points="5,-9 -5,-9 -10,0 -5,9 5,9 10,0" />
-            </g>
-          </defs>
-         
-          <g class="pod-wrap" id="jsHexagon">
-         <use xlink:href="#pod" transform="translate(50, 14)"/>
-            <use xlink:href="#pod" transform="translate(35, 23)"/>
-            <use xlink:href="#pod" transform="translate(35, 5)"/>
-            <use xlink:href="#pod" transform="translate(50, 14)"/>
-            <use xlink:href="#pod" transform="translate(50, 14)"/>
-            <use xlink:href="#pod" transform="translate(50, 50)"/>
-
-
-            <use xlink:href="#pod" transform="translate(50, 68)"/>
-            <use xlink:href="#pod" transform="translate(50, 32)"/>
-            <use xlink:href="#pod" transform="translate(65, 59)"/>
-            <use xlink:href="#pod" transform="translate(35, 59)"/>
-            <use xlink:href="#pod" transform="translate(35, 41)"/>
-            <use xlink:href="#pod" transform="translate(65, 41)"/>
-            <use xlink:href="#pod" transform="translate(80, 68)"/>
-            <use xlink:href="#pod" transform="translate(95, 77)"/> -->
-            
-            <!-- <use xlink:href="#pod" transform="translate(10, 50)"/>
-          </g>
-        </svg>
-         
-        <a href="http://www.mathopenref.com/coordpolycalc.html" target="_blank">point calculator</a>
-      -->
-      </div> 
-
-
-
     </div>
-
-
     <div class = "aboutContainer content" data-section="about">
       <a id="aboutAnchor" class = "anchor" data-hs-anchor="true"></a>
       <div class = "aboutText">
         <p><h1 class = "orange">School Teacher by day.</p>  Software Developer by night.</h1> </p>
-        <p>I am a self-taught Software Developer with experience building apps in Python, JavaScript, HTML, CSS and SQL.  I have also worked with React and Bootstrap and other JavaScript libraries for website development.</p>
+        I am a self-taught Software Developer with experience building apps in Python, JavaScript, HTML, CSS and SQL.  I have also worked with React and Bootstrap and other JavaScript libraries for website development.</p>
 
         <p>As a classroom teacher, I've written and designed courses for French, English, and Public Speaking. Teaching requires a skillset that is easily transferred into the developer role. As a language teacher, I am detail-oriented, manage my time well, and work with strict deadlines. </p>
       </div>
@@ -142,91 +107,88 @@
         <div class = "aboutCard sqlCard">
           <img class = "devLogo" src="images/logos/Sql_data_base_with_logo.png"alt="SqlLogo">  
         </div>
-        
-
       </div>
     </div>
+    <div class = "projectContainer content" data-section="projects">
+      <a id="projectAnchor" class = "anchor" data-hs-anchor="true"></a>
+      
+      <div class = "projectsHeader centerText"><h1>Projects</h1></div>
+      
+      <div class = "buttons invisible">
+        <button id = "newProjectBtn">New Project</button>
+        <button id = "removeProjectBtn">Remove Project</button>
+      </div>
 
+      <!-- projectCardsContainer interacts with the Javascript to make the cards.  -->
+      <div class = "projectCardsContainer">
+      </div>
 
-      <div class = "projectContainer content" data-section="projects">
-        <a id="projectAnchor" class = "anchor" data-hs-anchor="true"></a>
-        
-        <div class = "projectsHeader centerText"><h1>Projects</h1></div>
-        
-
-        <div class = "buttons invisible">
-          <button id = "newProjectBtn">New Project</button>
-          <button id = "removeProjectBtn">Remove Project</button>
-        </div>
-
-        <!-- projectCardsContainer interacts with the Javascript to make the cards.  -->
-        <div class = "projectCardsContainer">
-          
-        </div>
-        <!-- Form for new projects.  -->
-        <div class = "projectFormContainer" id = "newProjectFormContainer">
-          <div class = "newProjectPopUp">
-            <div class = "projectForm">
-              <form action="" method="post" id = "newProjectForm">
-                <div class = "form-input"><label for = "projectName">Project Name:</label>
-                  <input type = "text" id = "projectName" name = "projectName" >
-                  <div class = "error" id = "projectNameError">Please enter a project name</div>
+      <!-- Form for new projects.  -->
+      <div class = "projectFormContainer" id = "newProjectFormContainer">
+        <div class = "newProjectPopUp">
+          <div class = "projectForm">
+            <form action="" method="post" id = "newProjectForm">
+              <div class = "form-input"><label for = "projectName">Project Name:</label>
+                <input type = "text" id = "projectName" name = "projectName" >
+                <div class = "error" id = "projectNameError">Please enter a project name</div>
+              </div>
+    
+              <div class = "form-input">
+                <label for = "projectDescription">Project Description:</label>
+                <br>
+    
+                <textarea placeholder="Describe your project here..." id="projectDescription" name="projectDescription" rows="5" cols="33"></textarea>
+                <div class = "error" id = "projectDescriptionError">Please enter a description.</div>
+              </div>
+    
+              <div class = "form-input">
+                <label for = "previewLink">Preview Link</label>
+                <input type = "url" id = "previewLink" name = "previewLink" >
+                <div class = "error" id = "previewLinkError">Please enter a valid url.</div>
+              </div>
+    
+    
+              <div class = "form-input">
+                <label for = "projectGithub">GitHub Link</label>
+                <input type = "url" id = "projectGithub" name = "projectGithub" >
+                <div class = "error" id = "projectGithubError">Please enter a valid url.
                 </div>
-      
-                <div class = "form-input">
-                  <label for = "projectDescription">Project Description:</label>
-                  <br>
-      
-                  <textarea placeholder="Describe your project here..." id="projectDescription" name="projectDescription" rows="5" cols="33"></textarea>
-                  <div class = "error" id = "projectDescriptionError">Please enter a description.</div>
-                </div>
-      
-                <div class = "form-input">
-                  <label for = "previewLink">Preview Link</label>
-                  <input type = "url" id = "previewLink" name = "previewLink" >
-                  <div class = "error" id = "previewLinkError">Please enter a valid url.</div>
-                </div>
-      
-      
-                <div class = "form-input">
-                  <label for = "projectGithub">GitHub Link</label>
-                  <input type = "url" id = "projectGithub" name = "projectGithub" >
-                  <div class = "error" id = "projectGithubError">Please enter a valid url.
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class = "button-space">
-              <button class = "submitBtn" type = "submit" form="newProjectForm">Submit!</button>
-              <button id = "cancelBtnId" class = "cancelBtn">Go Back</button>
-            </div>
+              </div>
+            </form>
+          </div>
+          <div class = "button-space">
+            <button class = "submitBtn" type = "submit" form="newProjectForm">Submit!</button>
+            <button id = "cancelBtnId" class = "cancelBtn">Go Back</button>
           </div>
         </div>
-        
       </div>
-
+    </div>
     <div class = "contactContainer content" data-section="contact">
       <a id="contactAnchor" class = "anchor" data-hs-anchor="true"></a>
-
-      <h1>Contact Me</h1>
-
-      <h2>Email : mrinkert@gmail.com </h2>
-      <h2>Phone : 303 809 7540</h2>
-      <h2>LinkedIn: I have it somewhere...</h2>
-      <h2>Anything else?</h2>
+      <div class = "contactInfo">
+        <div class = "contactText plumMarker" id = "contactHeader">
+          <h1>Contact Me</h1>
+        </div>
+        <div class = "contactText blueMarker" id = "contactEmail">
+          Email : <a href="mailto:mrinkert@gmail.com">mrinkert@gmail.com</a>
+        </div>
+        <div class = "contactText pinkMarker" id = "contactPhone">
+          Phone : <a href = "tel:+13038097540"> 303 809 7540</a>
+        </div>
+        <div class = "contactText greenMarker" id = "contactLinkedIn">
+          Find me on <a target = "_blank" rel = "noreferrrer noopener"  href = "http://www.linkedin.com/in/mike-rinkert-668b40235">LinkedIn</a>
+        </div>
+        <div class = "contactText blueMarker" id = "contactGitHub">
+          On also on <a target = "_blank" rel = "noreferrrer noopener"  href = "https://github.com/RinkM">Github</a>
+        </div>
+      </div>
     </div>
-
-
-
     <footer> 
       <a href = "https://github.com/RinkM">
       <img class = "footer--img" src="images/fishAvatarSmall.png" alt="Fish Avatar">
       </a>Copyright RinkM 2022
     </footer>
-
   </div>
-
-
 </body>
 
 <script src="script2.js"></script>
