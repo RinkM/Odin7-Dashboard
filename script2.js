@@ -3,7 +3,7 @@ let cardLibrary = [{
     "projectName": "Calculator",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin5-Calculator/blob/main/app.html",
     "projectGithub": "https://github.com/RinkM/Odin5-Calculator",
-    "projectDescription": "A fully working calculator. Constructed using mainly JavaScript with some HTML and CSS.",
+    "projectDescription": "It adds! It subtracts! It even tastes like watermelon!",
     "projectThumb":"images/projectImgs/calcIcon.png",
     },
     {
@@ -11,7 +11,7 @@ let cardLibrary = [{
     "projectName": "Dogs Without Laps",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin6-SubscriptionForm/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin6-SubscriptionForm",
-    "projectDescription": "A subscription form to an imaginary charity site. Created with JS, HTML, and CSS",
+    "projectDescription": "Clients can use this fictious form to match their poor, empty lap with a dog in need.",
     "projectThumb":"images/projectImgs/dogIcon.png",
     },
     {
@@ -19,7 +19,7 @@ let cardLibrary = [{
     "projectName": "Sketch an Etch",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin4-Drawing/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin4-Drawing",
-    "projectDescription": "A drawing app. Created with JS, HTML, and CSS",
+    "projectDescription": "A drawing app. Use your mouse to draw and move the dials to change settings.",
     "projectThumb":"images/projectImgs/sketchIcon.png",
     },
     {
@@ -27,15 +27,23 @@ let cardLibrary = [{
     "projectName": "Rock, Paper, Scissors",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin3-RPS/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin3-RPS",
-    "projectDescription": "Rock, Paper, Scissors. Created with JS, HTML, and CSS",
+    "projectDescription": "As the last free Human, you challenge the AI Super Computers in order to save Humanity.",
     "projectThumb":"images/projectImgs/rpsIcon.png",
     },
     {
     "cardNumber": 4,
     "projectName": "Robot Dating Website",
+    "previewLink": "https://codesandbox.io/p/github/RinkM/React-Space/draft?file=%2FREADME.md",
+    "projectGithub": "https://github.com/RinkM/React-Space",
+    "projectDescription": "A React learning space: displays and filters users, creates forms, and displays this information via tabs.",
+    "projectThumb": "images/fishAvatarSmall.png",
+    },
+    {
+    "cardNumber": 5,
+    "projectName": "NooBorn Baby Tracker",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin3-RPS/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin3-RPS",
-    "projectDescription": "Used React to display and filter users, create forms, and display this information via tabs. ",
+    "projectDescription": "Made with Python, my first app.  Tracks feeding, waste and sleep of a new baby.",
     "projectThumb": "images/fishAvatarSmall.png",
     }
 ]
@@ -141,6 +149,10 @@ function cardBuilder(card){
     
     avatarLink = document.createElement("a");
     avatarLink.href = `${card.previewLink}`
+    avatarLink.setAttribute("target","_blank");
+    avatarLink.setAttribute("rel","noreferrer noopener");
+
+
     avatarLink.classList.add("imgProjectThumb");
 
     imgAvatar = document.createElement('img');
@@ -164,6 +176,8 @@ function cardBuilder(card){
     
     // ghLink.setAttribute("class","githubLink");
     ghLink.href = `${card.projectGithub}`
+    ghLink.setAttribute("target","_blank");
+    ghLink.setAttribute("rel","noreferrer noopener");
     
     ghLogo = document.createElement('img');
     ghLogo.setAttribute("src", 'images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png');
