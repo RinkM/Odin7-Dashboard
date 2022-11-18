@@ -5,7 +5,7 @@ let cardLibrary = [
     "previewLink": "https://codesandbox.io/p/github/RinkM/Odin9-TicTacToe/draft/nostalgic-grass?file=%2Fsrc%2FSettingsFactory.jsx",
     "projectGithub": "https://github.com/RinkM/Odin9-TicTacToe",
     "projectDescription": "Connect 3 to win.  Or on larger games, connect 4!",
-    "projectThumb":"",
+    "projectThumb":"images/fishAvatarSmall.png",
     },
    
    {
@@ -14,7 +14,7 @@ let cardLibrary = [
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
     "projectDescription": "Allows users to keep track of books, games and films that they are interested in.",
-    "projectThumb":"",
+    "projectThumb":"images/fishAvatarSmall.png",
     },
     
     {
