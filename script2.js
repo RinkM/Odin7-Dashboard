@@ -8,6 +8,38 @@ let cardLibrary = [
     "projectDescription": "Allows users to keep track of books, games and films that they are interested in.",
     "projectThumb":"",
     },
+   {
+    "cardNumber": 0,
+    "projectName": "Personal Media Library",
+    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
+    "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
+    "projectDescription": "Allows users to keep track of books, games and films that they are interested in.",
+    "projectThumb":"",
+    },
+   {
+    "cardNumber": 0,
+    "projectName": "Personal Media Library",
+    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
+    "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
+    "projectDescription": "Allows users to keep track of books, games and films that they are interested in.",
+    "projectThumb":"",
+    },
+   {
+    "cardNumber": 0,
+    "projectName": "Personal Media Library",
+    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
+    "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
+    "projectDescription": "Allows users to keep track of books, games and films that they are interested in.",
+    "projectThumb":"",
+    },
+   {
+    "cardNumber": 0,
+    "projectName": "Personal Media Library",
+    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
+    "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
+    "projectDescription": "Allows users to keep track of books, games and films that they are interested in.",
+    "projectThumb":"",
+    },
     
     {
     "cardNumber": 1,
