@@ -259,9 +259,9 @@ li{
     display: flex;
     flex-direction: column;
     background-image: url("images/whiteBG-pencils.jpg");
-    background-position: -680px;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
+    background-position: right;
+    background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .aboutText{
@@ -292,8 +292,10 @@ li{
 
 
 .contactContainer{
-    height:800px;
-    background-image: url("images/projectImgs/white-board.jpg");
+    background-size: cover;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-image: url(images/projectImgs/white-board.jpg);
 }
 
 .contactInfo{
