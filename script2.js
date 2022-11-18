@@ -42,8 +42,8 @@ let cardLibrary = [{
     {
     "cardNumber": 5,
     "projectName": "Robot Dating Website",
-    "previewLink": "https://codesandbox.io/p/github/RinkM/React-Space/draft?file=%2FREADME.md",
-    "projectGithub": "https://github.com/RinkM/React-Space",
+    "previewLink": "https://codesandbox.io/p/github/RinkM/Robot-Dating/draft/jolly-surf?file=%2FREADME.md",
+    "projectGithub": "https://github.com/RinkM/Robot-Dating",
     "projectDescription": "A React learning space: displays and filters users, creates forms, and displays this information via tabs.",
     "projectThumb": "images/fishAvatarSmall.png",
     },
