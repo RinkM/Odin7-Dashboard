@@ -64,7 +64,7 @@ let cardLibrary = [
     "projectGithub": "https://github.com/RinkM/Odin9-TicTacToe",
     "projectDescription": "Connect 3 to win.  Or on larger games, connect 4!",
     "projectThumb":"",
-    },
+    }
    
 ]
 
