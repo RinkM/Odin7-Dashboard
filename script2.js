@@ -7,7 +7,7 @@ let cardLibrary = [{
     "projectDescription": "Connect 3 to win.  Or on larger games, connect 4!",
     "projectThumb":"",
     },
-    
+   {
     "cardNumber": 0,
     "projectName": "Personal Media Library",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
