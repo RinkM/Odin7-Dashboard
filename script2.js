@@ -1,12 +1,5 @@
 let cardLibrary = [
-    {
-    "cardNumber": 7,
-    "projectName": "TicTacToe / Connect 4",
-    "previewLink": "https://codesandbox.io/p/github/RinkM/Odin9-TicTacToe/draft/nostalgic-grass?file=%2Fsrc%2FSettingsFactory.jsx",
-    "projectGithub": "https://github.com/RinkM/Odin9-TicTacToe",
-    "projectDescription": "Connect 3 to win.  Or on larger games, connect 4!",
-    "projectThumb":"",
-    },
+
    {
     "cardNumber": 0,
     "projectName": "Personal Media Library",
