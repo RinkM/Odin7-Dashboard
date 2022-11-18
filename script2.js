@@ -1,4 +1,4 @@
-let cardLibrary = [{
+let cardLibrary = [
     {
     "cardNumber": 7,
     "projectName": "TicTacToe / Connect 4",
