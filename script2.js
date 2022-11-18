@@ -1,39 +1,24 @@
 let cardLibrary = [
-
    {
     "cardNumber": 0,
+    "projectName": "TicTacToe + Connect 4",
+    "previewLink": "https://codesandbox.io/p/github/RinkM/Odin9-TicTacToe/draft/nostalgic-grass?file=%2Fsrc%2FSettingsFactory.jsx",
+    "projectGithub": "https://github.com/RinkM/Odin9-TicTacToe",
+    "projectDescription": "Connect 3 to win.  Or on larger games, connect 4!",
+    "projectThumb":"",
+    },
+   
+   { 
+    "cardNumber": 1,
     "projectName": "Personal Media Library",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
     "projectDescription": "Allows users to keep track of books, games and films that they are interested in.",
     "projectThumb":"",
-    },
+   },
+   
    {
-    "cardNumber": 0,
-    "projectName": "Personal Media Library",
-    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
-    "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
-    "projectDescription": "Allows users to keep track of books, games and films that they are interested in.",
-    "projectThumb":"",
-    },
-   {
-    "cardNumber": 0,
-    "projectName": "Personal Media Library",
-    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
-    "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
-    "projectDescription": "Allows users to keep track of books, games and films that they are interested in.",
-    "projectThumb":"",
-    },
-   {
-    "cardNumber": 0,
-    "projectName": "Personal Media Library",
-    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
-    "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
-    "projectDescription": "Allows users to keep track of books, games and films that they are interested in.",
-    "projectThumb":"",
-    },
-   {
-    "cardNumber": 0,
+    "cardNumber": 1,
     "projectName": "Personal Media Library",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
@@ -42,7 +27,7 @@ let cardLibrary = [
     },
     
     {
-    "cardNumber": 1,
+    "cardNumber": 2,
     "projectName": "Calculator",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin5-Calculator/blob/main/app.html",
     "projectGithub": "https://github.com/RinkM/Odin5-Calculator",
@@ -50,7 +35,7 @@ let cardLibrary = [
     "projectThumb":"images/projectImgs/calcIcon.png",
     },
     {
-    "cardNumber": 2,
+    "cardNumber": 3,
     "projectName": "Dogs Without Laps",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin6-SubscriptionForm/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin6-SubscriptionForm",
@@ -58,7 +43,7 @@ let cardLibrary = [
     "projectThumb":"images/projectImgs/dogIcon.png",
     },
     {
-    "cardNumber": 3,
+    "cardNumber": 4,
     "projectName": "Sketch an Etch",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin4-Drawing/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin4-Drawing",
@@ -66,7 +51,7 @@ let cardLibrary = [
     "projectThumb":"images/projectImgs/sketchIcon.png",
     },
     {
-    "cardNumber": 4,
+    "cardNumber": 5,
     "projectName": "Rock, Paper, Scissors",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin3-RPS/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin3-RPS",
@@ -74,7 +59,7 @@ let cardLibrary = [
     "projectThumb":"images/projectImgs/rpsIcon.png",
     },
     {
-    "cardNumber": 5,
+    "cardNumber": 6,
     "projectName": "Robot Dating Website",
     "previewLink": "https://codesandbox.io/p/github/RinkM/Robot-Dating/draft/jolly-surf?file=%2FREADME.md",
     "projectGithub": "https://github.com/RinkM/Robot-Dating",
@@ -82,21 +67,14 @@ let cardLibrary = [
     "projectThumb": "images/fishAvatarSmall.png",
     },
     {
-    "cardNumber": 6,
+    "cardNumber": 7,
     "projectName": "NooBorn Baby Tracker",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin3-RPS/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin3-RPS",
     "projectDescription": "Made with Python, my first app.  Tracks feeding, waste and sleep of a new baby.",
     "projectThumb": "images/fishAvatarSmall.png",
     },
-       {
-    "cardNumber": 7,
-    "projectName": "TicTacToe / Connect 4",
-    "previewLink": "https://codesandbox.io/p/github/RinkM/Odin9-TicTacToe/draft/nostalgic-grass?file=%2Fsrc%2FSettingsFactory.jsx",
-    "projectGithub": "https://github.com/RinkM/Odin9-TicTacToe",
-    "projectDescription": "Connect 3 to win.  Or on larger games, connect 4!",
-    "projectThumb":"",
-    }
+
    
 ]
 
