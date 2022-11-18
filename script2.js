@@ -1,5 +1,14 @@
 let cardLibrary = [{
     "cardNumber": 0,
+    "projectName": "Personal Media Library",
+    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin8.5-Library/blob/main/index.html",
+    "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
+    "projectDescription": "Allows users to keep track of books, games and films that they are interested in.",
+    "projectThumb":"",
+    },
+    
+    {
+    "cardNumber": 1,
     "projectName": "Calculator",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin5-Calculator/blob/main/app.html",
     "projectGithub": "https://github.com/RinkM/Odin5-Calculator",
@@ -7,7 +16,7 @@ let cardLibrary = [{
     "projectThumb":"images/projectImgs/calcIcon.png",
     },
     {
-    "cardNumber": 1,
+    "cardNumber": 2,
     "projectName": "Dogs Without Laps",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin6-SubscriptionForm/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin6-SubscriptionForm",
@@ -15,7 +24,7 @@ let cardLibrary = [{
     "projectThumb":"images/projectImgs/dogIcon.png",
     },
     {
-    "cardNumber": 2,
+    "cardNumber": 3,
     "projectName": "Sketch an Etch",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin4-Drawing/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin4-Drawing",
@@ -23,7 +32,7 @@ let cardLibrary = [{
     "projectThumb":"images/projectImgs/sketchIcon.png",
     },
     {
-    "cardNumber": 3,
+    "cardNumber": 4,
     "projectName": "Rock, Paper, Scissors",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin3-RPS/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin3-RPS",
@@ -31,7 +40,7 @@ let cardLibrary = [{
     "projectThumb":"images/projectImgs/rpsIcon.png",
     },
     {
-    "cardNumber": 4,
+    "cardNumber": 5,
     "projectName": "Robot Dating Website",
     "previewLink": "https://codesandbox.io/p/github/RinkM/React-Space/draft?file=%2FREADME.md",
     "projectGithub": "https://github.com/RinkM/React-Space",
@@ -39,7 +48,7 @@ let cardLibrary = [{
     "projectThumb": "images/fishAvatarSmall.png",
     },
     {
-    "cardNumber": 5,
+    "cardNumber": 6,
     "projectName": "NooBorn Baby Tracker",
     "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin3-RPS/blob/main/index.html",
     "projectGithub": "https://github.com/RinkM/Odin3-RPS",
