@@ -100,17 +100,17 @@ button:focus-visible {
 
 .corkboard{
   margin-top:-43px;
-  background-image: url("/src/images/background_corkboard.jpg")
+  background-image: url("/images/background_corkboard.jpg")
 }
 
 .paperBackground{
   /* margin-top:-43px; */
-  background-image: url("/src/images/backgroun_paper.jpg")
+  background-image: url("/images/backgroun_paper.jpg")
 }
 
 
 .blackboard{
-  background-image: url("src/images/blackboard.jpg");
+  background-image: url("/images/blackboard.jpg");
   color: #f0f0f0;
 
 }
