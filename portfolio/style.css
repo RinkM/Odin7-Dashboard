@@ -95,3 +95,189 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+.corkboard{
+  margin-top:-43px;
+  background-image: url("/src/images/background_corkboard.jpg")
+}
+
+.paperBackground{
+  /* margin-top:-43px; */
+  background-image: url("/src/images/backgroun_paper.jpg")
+}
+
+
+.blackboard{
+  background-image: url("src/images/blackboard.jpg");
+  color: #f0f0f0;
+
+}
+
+
+
+
+
+
+
+
+
+.cardHeader{
+
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardLinks{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+.imgProjectThumb{
+  height: 70px;
+
+}
+
+.githubLogo{
+  margin: 0px;
+  width: 60px;
+}
+
+
+/* added extra old things below... */
+
+
+.rightContainer{
+  margin:-5px;
+  margin-top:-22px;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+
+#newProjectFormContainer{
+  display: none;
+  position: absolute;
+  height:100%;
+  width: 100%;
+  z-index: 1;
+  /* display: flex; */
+  justify-content: center;
+  
+}
+
+.content{
+  margin-left:5px;
+}
+
+.homeContainer{
+  /* height:800px; */
+  padding:50px;
+  padding-bottom: 200px;
+  text-align: right;
+  font-size: 2rem;
+  background-image: url("images/books.jpg");
+}
+
+.homeText{
+  
+  font-weight: 900;
+}
+
+.aboutContainer{
+  padding:0px 15px;
+  height:750px;
+  
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/whiteBG-pencils.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+background-size: cover;
+}
+
+.aboutText{
+  max-width:625px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  grid-area:1 / 1 / 2 / 2;
+}
+.devLogo{
+  width:auto;
+  height: 70px;
+}
+
+
+.aboutCardsSpace{
+  /* grid-area: 2 / 1 / 3 /3; */
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* column-gap:10px ; */
+  
+}
+
+.aboutCard{
+  height:100px;
+
+}
+
+
+.contactContainer{
+  background-size: cover;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-image: url(images/projectImgs/white-board.jpg);
+}
+
+.contactInfo{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  align-items: center;
+  font-size: 3rem;
+
+}
+
+.contactText{
+  
+  font-weight: 300;
+
+}
+#contactHeader{
+  line-height: 0;
+}
+
+
+
+/* Background Colors for the Project Cards */
+.orangeBG{
+  background-color: #fea362;
+}
+.lightPink{
+  background-color: #ff7eb9;
+}
+.darkPink{
+  background-color: #ff65a3;
+}
+.blue{
+  background-color: #7afcff;
+}
+.dullYellow{
+  background-color: #feff9c;
+}
+.brightYellow{
+  background-color: #fff740;
+}
+
+/* font Colors */
+
+
+.plumMarker{color:#7a2e57}
+.blueMarker{color:#1088c5}
+.pinkMarker{color:#c5285d}
+.greenMarker{color:#4eb834}
+

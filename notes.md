@@ -1,5 +1,27 @@
 
 
+## coming back to this after some time...
+I'm looking to revamp this.  What changes should I make?
+Something Fluid. Scrolls when you go down.
+Mobile friendly.  I like the post it note idea. 
+Loading Screen?  Erase the whiteboard?
+Two sections of projects?    Just a little of everything?
+How to host it all?
+
+OdinProject Explanation.  I started with python moved to javascript?
+
+What about making the baby app?  
+javascript?  Something like that...has a user. 
+
+THIS THIS HAD HEXESESES  WHAT HAPPENED?
+Also get a new domain name.
+
+
+
+
+
+
+
 # 9-4
 ## Major Update Finalized Notes
 ### Things to add
