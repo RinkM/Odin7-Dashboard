@@ -1,6 +1,13 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+
+import makePostIts from './src/makePostIts'
+
+
+
+
+
+
+
 
 // document.querySelector('#app').innerHTML = `
 //   <div>
@@ -20,7 +27,6 @@ import { setupCounter } from './counter.js'
 //   </div>
 // `
 
-setupCounter(document.querySelector('#counter'))
 
 
 

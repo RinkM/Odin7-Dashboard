@@ -1,4 +1,4 @@
-let cardLibrary = [
+let projectLibrary = [
   {
    "cardNumber": 0,
    "projectName": "TicTacToe + Connect 4",
@@ -68,3 +68,7 @@ let cardLibrary = [
 
   
 ]
+
+
+
+export default projectLibrary

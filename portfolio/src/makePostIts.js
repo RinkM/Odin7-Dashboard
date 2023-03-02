@@ -1,43 +1,53 @@
+import projectLibrary from "./projectLibrary";
 
-const makePostIts = cardLibrary.map((card)=> {
+
+
+const makePostIts = projectLibrary.map((card)=> {
   buildPostIts(card)
 })
 
 
+function randColor (){
+  const stickyColors = ["orangeBG", "lightPink", "darkPink", "blue", "dullYellow", "brightYellow"]
+  const num = Math.floor(Math.random()*6)
+  return stickyColors[num]
+}
+
 function buildPostIts(card){
+  let projectSpace = document.getElementById("container--projects")
 
   // projectCard = card body
-  projectCard = document.createElement("div");
+  const projectCard = document.createElement("div");
   projectCard.setAttribute("id", `card${card.cardNumber}` );
   projectCard.classList.add("projectCard");
   projectCard.classList.add(randColor());
 
   // Makes card header with Project Name
-  cardHeader = document.createElement("div");
+  const cardHeader = document.createElement("div");
   cardHeader.classList.add("cardHeader");
 
-  projectName = document.createElement("div");
+  const projectName = document.createElement("div");
   projectName.classList.add("projectName");
   projectName.textContent = card.projectName
 
-  cardBody = document.createElement("div");
+  const cardBody = document.createElement("div");
   cardBody.classList.add("cardBody");
 
-  cardText = document.createElement("div");
+  const cardText = document.createElement("div");
   cardText.classList.add("cardText");
   cardText.textContent = card.projectDescription;
 
 
   // Make project Thumb with avatarlink + img    
-  cardLinks = document.createElement("div");
+  const cardLinks = document.createElement("div");
   cardLinks.classList.add("cardLinks");
 
-  projectThumbnail = document.createElement("div");
+  const projectThumbnail = document.createElement("div");
   projectThumbnail.classList.add("projectThumbnail");
   projectThumbnail.classList.add("grid");
   projectThumbnail.textContent = "View App"
   
-  avatarLink = document.createElement("a");
+  const avatarLink = document.createElement("a");
   avatarLink.href = `${card.previewLink}`
   avatarLink.setAttribute("target","_blank");
   avatarLink.setAttribute("rel","noreferrer noopener");
@@ -45,7 +55,7 @@ function buildPostIts(card){
 
   avatarLink.classList.add("imgProjectThumb");
 
-  imgAvatar = document.createElement('img');
+  const imgAvatar = document.createElement('img');
   imgAvatar.src = card.projectThumb;
   imgAvatar.setAttribute("alt","Project Avatar");
   imgAvatar.classList.add("imgProjectThumb");
@@ -54,14 +64,14 @@ function buildPostIts(card){
   avatarLink.appendChild(projectName);
 
   // GitHub Logo 
-  ghLinkDiv = document.createElement("div");
+  const ghLinkDiv = document.createElement("div");
   ghLinkDiv.classList.add("ghLinkDiv");
   ghLinkDiv.classList.add("centerText");
   ghLinkDiv.classList.add("grid");
   ghLinkDiv.textContent = "Inspect Code";
 
-  ghLink = document.createElement("a");
-  ghLogo = document.createElement('img');
+  const ghLink = document.createElement("a");
+
 
   
   // ghLink.setAttribute("class","githubLink");
@@ -69,7 +79,7 @@ function buildPostIts(card){
   ghLink.setAttribute("target","_blank");
   ghLink.setAttribute("rel","noreferrer noopener");
   
-  ghLogo = document.createElement('img');
+  const ghLogo = document.createElement('img');
   ghLogo.setAttribute("src", 'images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png');
   ghLogo.setAttribute("alt","Git Hub Logo");
   ghLogo.classList.add("githubLogo");
@@ -100,3 +110,6 @@ function buildPostIts(card){
   projectSpace.appendChild(projectCard);
 
 }
+
+
+export default makePostIts
