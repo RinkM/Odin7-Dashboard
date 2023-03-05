@@ -1,3 +1,13 @@
+// This file will also include the positive things. It is the whole corkboard.
+// need to differentiate the objects. 
+// organize the corkboard in sections.  Projects. About 
+// imagine a large one  wide one...
+// knick-knacks, trinkets, sticknotes, todo, ideagraph paper,
+// and then their image backgrounds...
+// and their style specific to the cad... but that's different. by name...
+// create a display function specific to the object...each object...maybe...
+// 
+
 let projectLibrary = [
   {
    "cardNumber": 0,

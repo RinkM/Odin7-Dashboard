@@ -6,6 +6,15 @@ const makePostIts = projectLibrary.map((card)=> {
   buildPostIts(card)
 })
 
+function randTilt(){
+  const num = Math.floor(Math.random()*3)
+  if (num % 3 == 0){
+    return "tiltLeft"
+  } else if (num % 3 == 1){
+    return "tiltRight"
+  } else return 
+
+}
 
 function randColor (){
   const stickyColors = ["orangeBG", "lightPink", "darkPink", "blue", "dullYellow", "brightYellow"]
@@ -14,13 +23,15 @@ function randColor (){
 }
 
 function buildPostIts(card){
-  let projectSpace = document.getElementById("container--projects")
+  let projectSpace = document.getElementById("projectCardsContainer")
 
+  console.log(projectSpace)
   // projectCard = card body
   const projectCard = document.createElement("div");
   projectCard.setAttribute("id", `card${card.cardNumber}` );
   projectCard.classList.add("projectCard");
   projectCard.classList.add(randColor());
+  projectCard.classList.add(randTilt());
 
   // Makes card header with Project Name
   const cardHeader = document.createElement("div");
