@@ -2,125 +2,179 @@ import projectLibrary from "./projectLibrary";
 
 
 
+function randNote(card){
+  const num = Math.floor(Math.random()*2)
+  if (num == 0){
+    buildPostIts(card)
+  } else {
+    buildNotes(card)
+  }
+}
+
 const makePostIts = projectLibrary.map((card)=> {
-  buildPostIts(card)
+
+  randNote(card)
+
+
+  
 })
 
-function randTilt(){
-  const num = Math.floor(Math.random()*3)
-  if (num % 3 == 0){
-    return "tiltLeft"
-  } else if (num % 3 == 1){
-    return "tiltRight"
-  } else return 
 
-}
-
-function randColor (){
-  const stickyColors = ["orangeBG", "lightPink", "darkPink", "blue", "dullYellow", "brightYellow"]
-  const num = Math.floor(Math.random()*6)
-  return stickyColors[num]
-}
 
 function buildPostIts(card){
-  let projectSpace = document.getElementById("projectCardsContainer")
+  const projectSpace = document.getElementById("projectCardsContainer")
+  const tilt = randTilt()
+  const type = "";
 
-  console.log(projectSpace)
-  // projectCard = card body
   const projectCard = document.createElement("div");
   projectCard.setAttribute("id", `card${card.cardNumber}` );
   projectCard.classList.add("projectCard");
   projectCard.classList.add(randColor());
   projectCard.classList.add(randTilt());
 
-  // Makes card header with Project Name
-  const cardHeader = document.createElement("div");
-  cardHeader.classList.add("cardHeader");
+  projectCard.appendChild(buildPostItHeader(card, tilt, type));
+  projectCard.appendChild(buildPostItBody(card, tilt, type));
+  projectCard.appendChild(buildPostitLinks(card, tilt, type));
 
-  const projectName = document.createElement("div");
-  projectName.classList.add("projectName");
-  projectName.textContent = card.projectName
-
-  const cardBody = document.createElement("div");
-  cardBody.classList.add("cardBody");
-
-  const cardText = document.createElement("div");
-  cardText.classList.add("cardText");
-  cardText.textContent = card.projectDescription;
-
-
-  // Make project Thumb with avatarlink + img    
-  const cardLinks = document.createElement("div");
-  cardLinks.classList.add("cardLinks");
-
-  const projectThumbnail = document.createElement("div");
-  projectThumbnail.classList.add("projectThumbnail");
-  projectThumbnail.classList.add("grid");
-  projectThumbnail.textContent = "View App"
-  
-  const avatarLink = document.createElement("a");
-  avatarLink.href = `${card.previewLink}`
-  avatarLink.setAttribute("target","_blank");
-  avatarLink.setAttribute("rel","noreferrer noopener");
-
-
-  avatarLink.classList.add("imgProjectThumb");
-
-  const imgAvatar = document.createElement('img');
-  imgAvatar.src = card.projectThumb;
-  imgAvatar.setAttribute("alt","Project Avatar");
-  imgAvatar.classList.add("imgProjectThumb");
-
-  avatarLink.appendChild(imgAvatar);
-  avatarLink.appendChild(projectName);
-
-  // GitHub Logo 
-  const ghLinkDiv = document.createElement("div");
-  ghLinkDiv.classList.add("ghLinkDiv");
-  ghLinkDiv.classList.add("centerText");
-  ghLinkDiv.classList.add("grid");
-  ghLinkDiv.textContent = "Inspect Code";
-
-  const ghLink = document.createElement("a");
-
-
-  
-  // ghLink.setAttribute("class","githubLink");
-  ghLink.href = `${card.projectGithub}`
-  ghLink.setAttribute("target","_blank");
-  ghLink.setAttribute("rel","noreferrer noopener");
-  
-  const ghLogo = document.createElement('img');
-  ghLogo.setAttribute("src", 'images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png');
-  ghLogo.setAttribute("alt","Git Hub Logo");
-  ghLogo.classList.add("githubLogo");
-
-  // post Giithub into its kDiv
-  ghLink.appendChild(ghLogo);
-  ghLinkDiv.appendChild(ghLink);
-
-// Post name into Card header
-  
-  cardHeader.appendChild(projectName);
-  // cardHeader.appendChild(projectThumbnail);
-
-// Post into Card body
-  projectThumbnail.appendChild(avatarLink);
-  cardLinks.appendChild(projectThumbnail);
-  cardLinks.appendChild(ghLinkDiv);
-  cardBody.appendChild(cardText);
-  cardBody.appendChild(cardLinks);
-  
-  
-
-// Post header and body onto Card
-  projectCard.appendChild(cardHeader);
-  projectCard.appendChild(cardBody);
-
-// Post card.
   projectSpace.appendChild(projectCard);
 
 }
 
+function buildNotes(card){
+  const projectSpace = document.getElementById("projectCardsContainer")
+  const tilt = randTilt()
+  const type = "Note";
 
-export default makePostIts
+  const projectCard = document.createElement("div");
+  projectCard.setAttribute("id", `card${card.cardNumber}` );
+  projectCard.classList.add(`projectCard${type}`);
+  projectCard.classList.add(randTilt());
+
+  projectCard.appendChild(buildPostItHeader(card, tilt, type));
+
+  projectCard.appendChild(buildPostItBody(card, tilt, type));
+  projectCard.appendChild(buildPostitLinks(card, tilt, type));
+  projectCard.appendChild(noteBackgroundImg());
+
+  projectSpace.appendChild(projectCard);
+}
+
+
+  function buildPostItHeader (card, tilt, type){
+    const cardHeader = document.createElement("div");
+    cardHeader.classList.add(`cardHeader${type}`);
+    const projectName = document.createElement("div");
+    projectName.classList.add("projectName");
+    projectName.textContent = card.projectName
+    cardHeader.classList.add(tilt);
+    cardHeader.appendChild(projectName);
+    return cardHeader
+  }
+
+  function buildPostItBody(card, tilt, type) {
+    const cardBody = document.createElement("div");
+    cardBody.classList.add(`cardBody${type}`);
+    const cardText = document.createElement("div");
+    cardText.classList.add(`cardText${type}`);
+    cardText.textContent = card.projectDescription;
+    cardBody.classList.add(tilt);
+    cardBody.appendChild(cardText);
+    return cardBody
+  }
+
+
+  function buildPostitLinks (card, tilt, type){
+    const cardLinks = document.createElement("div");
+    cardLinks.classList.add(tilt);
+    cardLinks.classList.add(`cardLinks${type}`);
+    cardLinks.appendChild(appPreview(card));
+    cardLinks.appendChild(codeLink(card));
+
+    return cardLinks
+
+  }
+
+
+  function appPreview (card){
+    const viewApp = document.createElement("div");
+    viewApp.classList.add("viewApp");
+    viewApp.classList.add("grid");
+    
+
+    const previewAnchorLink = document.createElement("a");
+    previewAnchorLink.href = `${card.previewAnchorLink}`
+    previewAnchorLink.setAttribute("target","_blank");
+    previewAnchorLink.setAttribute("rel","noreferrer noopener");
+    previewAnchorLink.classList.add("imgProjectThumb");
+    previewAnchorLink.textContent = "View App"
+
+    viewApp.appendChild(previewAnchorLink);
+    
+    return viewApp
+
+  }
+
+  function codeLink (card){
+    const codeText = document.createElement("div");
+    codeText.classList.add("codeText");
+    codeText.classList.add("centerText");
+    codeText.classList.add("grid");
+    
+
+    const codeAnchorLink = document.createElement("a");
+    codeAnchorLink.href = `${card.projectGithub}`
+    codeAnchorLink.setAttribute("target","_blank");
+    codeAnchorLink.setAttribute("rel","noreferrer noopener");
+    codeAnchorLink.textContent = "Inspect Code";
+        
+    codeText.appendChild(codeAnchorLink);
+
+    return codeText
+
+  }
+
+
+  function noteBackgroundImg(){
+    const imgSrc = ["/images/toDoPaper.jpg",
+      "/images/idea_top.png"]
+
+      const num = Math.floor(Math.random()*imgSrc.length)
+
+    const backgroundImg = document.createElement("img");
+    const object = {
+      class :"todoImage",
+      src: imgSrc[num],
+      alt: "Lined paper with the words TO DO written on it."
+    }
+      setAttributes(backgroundImg, object)
+    return backgroundImg
+  
+  }
+
+
+  function setAttributes(el, attrs) {
+    for(var key in attrs) {
+      el.setAttribute(key, attrs[key]);
+    }
+  }
+
+
+  function randTilt(){
+    const num = Math.floor(Math.random()*2)
+    if (num % 3 == 0){
+      return "tiltLeft"
+    } else {
+      return "tiltRight"
+    } 
+  
+  }
+  
+  function randColor (){
+    const stickyColors = ["orangeBG", "lightPink", "darkPink", "blue", "dullYellow", "brightYellow"]
+    const num = Math.floor(Math.random()*6)
+    return stickyColors[num]
+  }
+  
+
+
+export default {makePostIts}
