@@ -227,7 +227,6 @@ button:focus-visible {
 }
 
 .aboutText{
-  max-width:625px;
   padding-left: 10px;
   font-size: 1.2rem;
   grid-area:1 / 1 / 2 / 2;
