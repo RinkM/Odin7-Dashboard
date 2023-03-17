@@ -17,8 +17,26 @@ THIS THIS HAD HEXESESES  WHAT HAPPENED?
 Also get a new domain name.
 
 
+http://weather.rinkertm-portfolio.rf.gd/
 
-
+.intro-text{
+    text-align: center;
+    font-size: 3em;
+    width: 0ch;
+    overflow: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    background-image: linear-gradient(155deg, #fb7419, #bc1429, #319197);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.intro-text.active{
+    animation: typeIn 2s steps(28) forwards;
+}
+@keyframes typeIn {
+    to { width: 28ch; }
+}
 
 
 

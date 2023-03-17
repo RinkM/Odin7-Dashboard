@@ -132,7 +132,7 @@ function buildNotes(card){
     return codeText
 
   }
-
+  // portfolio\src\images\idea_top.png
 
   function noteBackgroundImg(){
     const imgSrc = ["/images/toDoPaper.jpg",
