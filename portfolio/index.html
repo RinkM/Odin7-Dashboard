@@ -2,70 +2,95 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="portfolio/images/fishAvatarSmall.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
-
-
-
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rinkert Portfolio </title>
 </head>
 <body>
   <div id="app">
-    <header id = "container--header">This should go at the top.</header>
-    <nav id = "container--nav">This is the nav. Inside the header.  Resume link, projects, contact info. </nav>
+    <header id = "container--header" class = "">
+      <nav id = "container--nav">
+        <ul id = "navUl">
+          <li class = "listItemNav">ABOUT ME??? </li>
+          <li class = "listItemNav">Projects</li>
+          <li class = "listItemNav">Resume</li>
+          <li class = "listItemNav">Contact Me</li>
+          <li class = "listItemNav">Github</li>
+          <li class = "listItemNav">linkedIn</li>
+        </ul>
+      </nav>
+    </header>
     
-    <div id = "container--middle" class = "blackboard">
-      <div class = "aboutContainer content" data-section="about">
-        <a id="aboutAnchor" class = "anchor" data-hs-anchor="true"></a>
-        <div class = "aboutText">
-          <h1 class = "orange font-PermMarker">
-            <div id = "handwrite" class = "chalkHeader--text" ></div>
-            <div id = "chalkHeader--text1" class = "chalkHeader--text" >School Teacher by day.</div>
-            <div id = "chalkHeader--text2" class = "chalkHeader--text" >Software Developer by night.</div>
-          </h1>
-          <div id = "chalkBody--text" class = "chalkBody font-Kalem">
-            I am a self-taught Software Developer with experience building apps in Python, JavaScript, HTML, CSS and SQL.  I have also worked with React and Bootstrap and other JavaScript libraries for website development.
-            As a classroom teacher, I've written and designed courses for French, English, and Public Speaking. Teaching requires a skillset that is easily transferred into the developer role. As a language teacher, I am detail-oriented, manage my time well, and work with strict deadlines. 
-          </div>
+    <div id = "container--blackboard" class = "blackboard">
+      <div id = "blackboard--left">
+        <div id = "blackboardTitleContainer">
+          <div id = "blackboard--title" class = "font-PermMarker" >Mr. Rinkert</div>
         </div>
-        <div class = "aboutCardsSpace">
-          <div class = "aboutCard jsCard">
-            <img class = "devLogo" src="images/logos/Javascript_badge.svg.png" alt="JavaScript Logo">
+        <div id = "blackboard--text1" class = "blackboard--text font-PermMarker" >Software Engineer</div>
+        <div id = "blackboard--text2" class = "blackboard--text font-PermMarker" >Teacher</div>
+      </div>
+      
+      <div id = "blackboard--right">
+        <div id = "blackboard--body" class = "chalkBody font-Kalem">
+          <div>I am a self-taught Software Developer with experience building apps in Python, JavaScript, HTML, CSS and SQL.  I have also worked with React and Bootstrap and other JavaScript libraries for website development.
           </div>
-          <div class = "aboutCard htmlCard">
-            <img class = "devLogo" src="images/logos/HTML5_Logo_256.png" alt="HTML logo">
-          </div>
-          <div class = "aboutCard cssCard">
-            <img class = "devLogo" src="images/logos/CSS3_logo_and_wordmark.svg.png" alt="CSS Logo">
-          </div>
-          <div class = "aboutCard pythonCard">
-            <img class = "devLogo" src="images/logos/python_vertical_logo_icon_168039.png" alt="python">  
-          </div>
-          <div class = "aboutCard sqlCard">
-            <img class = "devLogo" src="images/logos/Sql_data_base_with_logo.png" alt="SqlLogo">  
+          <div>As a classroom teacher, I've written and designed courses for French, English, and Public Speaking. Teaching requires a skillset that is easily transferred into the developer role. As a language teacher!, I am detail-oriented, manage my time well, and work with strict deadlines. 
+            Eager to learn. Diligent. Perservere. TeamWork. 
+
+            I have taught 
           </div>
         </div>
       </div>
     </div>
+  
 
-    <div id = "container--top" class = "corkboard">
+  
 
 
-      <div id = "projectCardsContainer">
-
-        <!-- <div class = "polaroid tiltRight">
-          <img class = "polaroidImg" src="images/self_ireland_square.png" alt="a picture of me">
-        </div> -->
-        
-        <div class = "polaroid tiltLeft">
-          <img class = "polaroidImg" src="images/self_hike_square.png" alt="a picture of me">
+    <div id = "container--logo">
+      
+      <!-- <div>
+        <div class = "aboutCard jsCard">
+          <img class = "devLogo" src="images/logos/Javascript_badge.svg.png" alt="JavaScript Logo">
+        </div>
+        <div class = "aboutCard htmlCard">
+          <img class = "devLogo" src="images/logos/HTML5_Logo_256.png" alt="HTML logo">
+        </div>
+        <div class = "aboutCard cssCard">
+          <img class = "devLogo" src="images/logos/CSS3_logo_and_wordmark.svg.png" alt="CSS Logo">
+        </div>
+        <div class = "aboutCard pythonCard">
+          <img class = "devLogo" src="images/logos/python_vertical_logo_icon_168039.png" alt="python">  
+        </div>
+        <div class = "aboutCard sqlCard">
+          <img class = "devLogo" src="images/logos/Sql_data_base_with_logo.png" alt="SqlLogo">  
         </div>
       </div>
-    </div>  
+       -->
+    </div>
+
+      
+    
+    <div class="blackboard">
+      <div id = "container--top" class = "corkboard">
+
+
+        <div id = "projectCardsContainer">
+  
+          <!-- <div class = "polaroid tiltRight">
+            <img class = "polaroidImg" src="images/self_ireland_square.png" alt="a picture of me">
+          </div> -->
+          
+          <div class = "polaroid tiltLeft">
+            <img class = "polaroidImg" src="images/self_hike_square.png" alt="a picture of me">
+          </div>
+        </div>
+      </div>  
+    </div>
+
   
 
     <div id = "container--bottom">      
