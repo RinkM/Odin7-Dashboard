@@ -85,8 +85,8 @@ function buildNotes(card){
 
   function buildPostitLinks (card, tilt, type){
     const cardLinks = document.createElement("div");
-    cardLinks.classList.add(tilt);
     cardLinks.classList.add(`cardLinks${type}`);
+    cardLinks.classList.add(tilt);
     cardLinks.appendChild(appPreview(card));
     cardLinks.appendChild(codeLink(card));
 
@@ -100,9 +100,8 @@ function buildNotes(card){
     viewApp.classList.add("viewApp");
     viewApp.classList.add("grid");
     
-
     const previewAnchorLink = document.createElement("a");
-    previewAnchorLink.href = `${card.previewAnchorLink}`
+    previewAnchorLink.href = `${card.previewLink}`
     previewAnchorLink.setAttribute("target","_blank");
     previewAnchorLink.setAttribute("rel","noreferrer noopener");
     previewAnchorLink.classList.add("imgProjectThumb");
