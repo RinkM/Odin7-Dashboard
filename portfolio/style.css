@@ -45,9 +45,7 @@ h1 {
 }
 
 #app {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: -2em auto;
   text-align: center;
 }
 
@@ -94,17 +92,30 @@ button:focus-visible {
 
 
 
+header{
+  background-image: url("/images/blackboard.jpg");
+  height:2em;
+  font-size: 1.8em;
+  color: white;
+  position: sticky;
+  top:0px;
+  z-index: 4;
+  border-bottom: white solid 2pt;
 
+}
 
 #navUl{
   display: flex;
   justify-content: center;
+  list-style-type:none;
 }
-
 
 .listItemNav{
-  margin:0px 5px;
+  margin:0px 20px;
 }
+
+
+
 
 
 .font-PermMarker{
@@ -188,8 +199,8 @@ button:focus-visible {
 
 
 #blackboard--body{
-  border: 3pt solid white;
-  border-radius: 8px;
+  /* border: 3pt solid white;
+  border-radius: 8px; */
   font-size: 1.5em;
   padding: 1em;
   margin: 3em 2em;
@@ -197,6 +208,9 @@ button:focus-visible {
 }
 
 
+.blackboard--body--text{
+  margin:1em;
+}
 
 
 
@@ -477,46 +491,23 @@ transform: rotate(0deg);
 
 
 
-@media only screen and (min-width:600px)  {
-  #apps {
-    max-width: 600px ;
+@media only screen and (min-width:360px)  {
+  #container--blackboard{
+    display: flex;
+    flex-direction: column;
   }
-  .headerBtn{
 
-  }
-  .headers{
-    /* background-color: blue; */
-  }
+
 
 }
 
 @media only screen and (min-width:800px)  {
  
-  #apps {
-    max-width: 800px ;
-  }
-
-  #container--tops{
-    
-    flex-direction: row;
-    max-width: 800px;
-  }
-  .headers{
-    /* background-color: red; */
-  }
 
 }
 
 @media only screen and (min-width:1000px)  {
  
-  #apps {
-    max-width: 1000px ;
-  }
-
-  .headers{
-    /* background-color: black; */
-  }
-
 }
 
 
@@ -529,14 +520,18 @@ transform: rotate(0deg);
   flex-wrap: wrap;
   justify-content: center;
   margin: 5px;
-  min-height : 250px;
+  min-height : 450px;
   max-height: fit-content;
+  align-content: center;
 }
 
 .singleLogo{
+  transition: all .5s ease;
   margin:5px;
-  
+}
 
+.singleLogo:hover{
+  transform: scale(1.1);
 }
 .logoImage{
   margin: 5px;
