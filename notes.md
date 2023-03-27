@@ -16,6 +16,8 @@ javascript?  Something like that...has a user.
 THIS THIS HAD HEXESESES  WHAT HAPPENED?
 Also get a new domain name.
 
+https://codepen.io/jh3y/pen/VweZryJ
+The book turns pages....
 
 http://weather.rinkertm-portfolio.rf.gd/
 

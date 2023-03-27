@@ -1,5 +1,21 @@
 import projectLibrary from "./projectLibrary";
 
+function randTilt(){
+  const num = Math.floor(Math.random()*2)
+  if (num % 3 == 0){
+    return "tiltLeft"
+  } else {
+    return "tiltRight"
+  } 
+
+}
+
+function randColor (){
+  const stickyColors = ["orangeBG", "lightPink", "darkPink", "blue", "dullYellow", "brightYellow"]
+  const num = Math.floor(Math.random()*6)
+  return stickyColors[num]
+}
+
 
 
 function randNote(card){
@@ -11,13 +27,16 @@ function randNote(card){
   }
 }
 
-const makePostIts = projectLibrary.map((card)=> {
-
-  randNote(card)
 
 
-  
-})
+function makePostIts () {
+  const makePostIts = projectLibrary.map((card)=> {
+    randNote(card)
+  })
+
+}
+
+
 
 
 
@@ -158,22 +177,6 @@ function buildNotes(card){
   }
 
 
-  function randTilt(){
-    const num = Math.floor(Math.random()*2)
-    if (num % 3 == 0){
-      return "tiltLeft"
-    } else {
-      return "tiltRight"
-    } 
-  
-  }
-  
-  function randColor (){
-    const stickyColors = ["orangeBG", "lightPink", "darkPink", "blue", "dullYellow", "brightYellow"]
-    const num = Math.floor(Math.random()*6)
-    return stickyColors[num]
-  }
   
 
-
-export default {makePostIts}
+export {makePostIts, randTilt}

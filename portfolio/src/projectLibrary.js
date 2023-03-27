@@ -30,8 +30,8 @@ let projectLibrary = [
       {
         "cardNumber": 10,
         "projectName": "Get Stuff Done",
-        "previewLink": "https://codesandbox.io/p/github/RinkM/Odin9-TicTacToe/draft/nostalgic-grass?file=%2Fsrc%2FSettingsFactory.jsx",
-        "projectGithub": "https://github.com/RinkM/Odin9-TicTacToe",
+        "previewLink": "http://todo.rinkertm-portfolio.rf.gd/",
+        "projectGithub": "https://github.com/RinkM/Odin11-ToDoList-Vite",
         "projectDescription": "Add things to your list. Do them. Swipe them away.",
         "projectThumb":"images/fishAvatarSmall.png",
         },
@@ -40,7 +40,7 @@ let projectLibrary = [
   {
    "cardNumber": 0,
    "projectName": "TicTacToe + Connect 4",
-   "previewLink": "https://codesandbox.io/p/github/RinkM/Odin9-TicTacToe/draft/nostalgic-grass?file=%2Fsrc%2FSettingsFactory.jsx",
+   "previewLink": "http://tictactoe.rinkertm-portfolio.rf.gd/",
    "projectGithub": "https://github.com/RinkM/Odin9-TicTacToe",
    "projectDescription": "Connect 3 to win.  Or on larger games, connect 4!",
    "projectThumb":"images/fishAvatarSmall.png",
@@ -58,7 +58,7 @@ let projectLibrary = [
    "projectName": "Dogs Without Laps",
    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin6-SubscriptionForm/blob/main/index.html",
    "projectGithub": "https://github.com/RinkM/Odin6-SubscriptionForm",
-   "projectDescription": "Clients can use this fictious form to match their poor, empty lap with a dog in need.",
+   "projectDescription": "Clients can use this fictitious form to match their poor, empty lap with a dog in need.",
    "projectThumb":"images/projectImgs/dogIcon.png",
    },
    {

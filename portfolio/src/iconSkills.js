@@ -11,10 +11,12 @@ const logos = [{
     source: "/images/icons/javaScript.png",
     name: "JAVASCRIPT",
   },
-  {
-    source: "/images/icons/odinProject.png",
-    name: "THE ODIN PROJECT",
-  },
+
+  // {
+  //   source: "/images/icons/odinProject.png",
+  //   name: "THE ODIN PROJECT",
+  // },
+
   {
     source: "/images/icons/python.png",
     name: "PYTHON",

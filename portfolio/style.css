@@ -1,3 +1,11 @@
+/* 
+font-family: 'Indie Flower', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Splash', cursive;
+ */
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -45,7 +53,7 @@ h1 {
 }
 
 #app {
-  margin: -2em auto;
+  margin: auto;
   text-align: center;
 }
 
@@ -94,8 +102,8 @@ button:focus-visible {
 
 header{
   background-image: url("/images/blackboard.jpg");
-  height:2em;
-  font-size: 1.8em;
+  /* height:2em; */
+  font-size: 2em;
   color: white;
   position: sticky;
   top:0px;
@@ -106,21 +114,35 @@ header{
 
 #navUl{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   list-style-type:none;
+  margin: 0;
+  padding-left: 10px;
+
 }
 
 .listItemNav{
-  margin:0px 20px;
+  margin:0px 5px;
 }
 
 
+.font-IndieFlower{
+  font-family: 'Indie Flower', cursive;
+}
 
-
+.font-Splash{
+  font-family: 'Splash', cursive;
+}
 
 .font-PermMarker{
   font-family: 'Permanent Marker', cursive;  
 }
+
+
+
+
+
+
 
 .font-Kalem{
   font-family: 'Kalam', cursive;
@@ -148,49 +170,56 @@ header{
   overflow: hidden;
   position: relative;
   display: flex;
-  height: 1000px;
-
 }
 
 
 #blackboard--left{
   margin: 2em;
-  min-width: 360px;
+
 }
 
 
 #blackboard--title{
-  text-align: left;
-  font-size: 5.5em;
-  width: 0ch;
+  display: flex;
+  width: 0%;
   max-height: 268px;
   overflow: hidden;
   margin: 0;
   white-space: nowrap;
   color: white;
   opacity: 1;
-  /* background-image: linear-gradient(155deg, #f2edea, #fcfafa, #d5dbdc); */
+  
   background-clip: text;
   -webkit-background-clip: text;
-  transform: rotate(-10deg);
+  
   align-self: flex-start;
-  animation: typeIn 4s steps(60) forwards;
+
+  animation: typeIn 4s ease-in-out forwards ;
+  /* transform: rotate(-20deg); */
+  /* background-image: linear-gradient(155deg, #f2edea, #fcfafa, #d5dbdc); */
 }
 
 #blackboard--title:hover{
 
 }
 @keyframes typeIn {
-  to { width: 9ch; }
+  to { width: 100%; }
+}
+
+#rinkertChalk{
+  width:326px;
+  display: block;
+
 }
 
 .blackboard--text{
-  font-size: 2em;
-  margin: 1em;
+  font-size: 3em;
+  margin: 2em auto;
 
 }
 
 #blackboardTitleContainer{
+  margin: 1em auto;
 }
 
 #blackboard--right{
@@ -202,9 +231,8 @@ header{
   /* border: 3pt solid white;
   border-radius: 8px; */
   font-size: 1.5em;
-  padding: 1em;
-  margin: 3em 2em;
-  
+  padding: .25em;
+  margin: .25em auto;
 }
 
 
@@ -219,12 +247,12 @@ header{
 
 
 .cardHeader{
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 1.8rem;
 
 }
 .cardBody{
-  margin-inline:10px;
+  margin-inline:auto;
   font-size: 1.2rem;
 }
 
@@ -491,13 +519,34 @@ transform: rotate(0deg);
 
 
 
-@media only screen and (min-width:360px)  {
+@media only screen and (max-width:550px)  {
+  #app, body{
+    width: 390px;
+    margin: auto;
+    
+  }
+  
   #container--blackboard{
     display: flex;
     flex-direction: column;
+    word-wrap:normal;
+
   }
 
+  #container--logo{
+    max-width: 100%;
+  }
 
+  .blackboard--text {
+    font-size: 2.5em;
+    margin: 0 auto
+  }
+
+  .projectCard, .projectCardNote, .todoImage{
+    width: 150px;
+
+
+  }
 
 }
 
@@ -516,13 +565,27 @@ transform: rotate(0deg);
 
 
 #container--logo{
+  background: linear-gradient(blue 4.5%, transparent 0) 0 0 / auto 1.5em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 5px;
-  min-height : 450px;
+  margin: 5px auto;
+  padding: 10px 0 50px;
+  min-height: 450px;
   max-height: fit-content;
   align-content: center;
+  max-width: 600px;
+
+
+}
+
+.logoTitle{
+  line-height: 1em;
+  width:800px;
+  margin:auto;
+  font-size: 4em;
+  font-family: 'Indie Flower', cursive;
+
 }
 
 .singleLogo{
@@ -531,15 +594,16 @@ transform: rotate(0deg);
 }
 
 .singleLogo:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .logoImage{
-  margin: 5px;
   width: 100px;
   height: 100px;
 
 }
 
 .logoText{
+  font-size: 16pt;
+  font-family: 'Indie Flower', cursive;
 
 }

@@ -1,0 +1,35 @@
+
+
+scrollTrigger('.loader', {
+  cb: function(el) {
+    el.innerText = "Loading ..."
+    loadContent()
+  }
+})
+
+
+// A threshold of zero triggers the intersection when the first pixel of the target element intersects the root element. A threshold of one triggers when the entire target element is inside the root element.
+// the header will always throw off your calculations...
+
+const options = {
+  root: document.body,
+  rootMargin: '0px',
+  threshold: 0
+}
+
+
+function callback (entries, observer) {
+  console.log(observer);
+  
+  entries.forEach(entry => {
+    console.log(entry);
+  });
+}
+
+let observer = new IntersectionObserver(callback, options);
+observer.observe(targetElement);
+
+let target = document.querySelector("#listItem");
+observer.observe(target);
+
+
