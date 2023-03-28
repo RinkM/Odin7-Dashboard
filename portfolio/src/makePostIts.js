@@ -42,14 +42,16 @@ function makePostIts () {
 
 function buildPostIts(card){
   const projectSpace = document.getElementById("projectCardsContainer")
-  const tilt = randTilt()
+  // const tilt = randTilt()
+  const tilt = "tiltRight"
+
   const type = "";
 
   const projectCard = document.createElement("div");
   projectCard.setAttribute("id", `card${card.cardNumber}` );
   projectCard.classList.add("projectCard");
   projectCard.classList.add(randColor());
-  projectCard.classList.add(randTilt());
+  projectCard.classList.add(tilt);
 
   projectCard.appendChild(buildPostItHeader(card, tilt, type));
   projectCard.appendChild(buildPostItBody(card, tilt, type));
@@ -61,13 +63,14 @@ function buildPostIts(card){
 
 function buildNotes(card){
   const projectSpace = document.getElementById("projectCardsContainer")
-  const tilt = randTilt()
+  // const tilt = randTilt()
+  const tilt = "tiltLeft"
   const type = "Note";
 
   const projectCard = document.createElement("div");
   projectCard.setAttribute("id", `card${card.cardNumber}` );
   projectCard.classList.add(`projectCard${type}`);
-  projectCard.classList.add(randTilt());
+  projectCard.classList.add(tilt);
 
   projectCard.appendChild(buildPostItHeader(card, tilt, type));
 

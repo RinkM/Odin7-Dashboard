@@ -24,7 +24,7 @@ font-family: 'Splash', cursive;
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #3828c5;
   text-decoration: inherit;
 }
 a:hover {
@@ -247,10 +247,12 @@ header{
 
 
 .cardHeader{
-  margin-top: 5px;
+  margin-top: 1rem;
   font-size: 1.8rem;
-
+  line-height: 1.8rem;
+  height: fit-content;
 }
+
 .cardBody{
   margin-inline:auto;
   font-size: 1.2rem;
@@ -260,12 +262,14 @@ header{
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 15px;
+  margin: 1rem auto 15px
 }
 
 
 .projectCardNote:hover{
   filter:drop-shadow(7px 7px 7px black) brightness(1.1) ;    
   transform: rotate(0deg);
+  z-index: 4;
 
 
 
@@ -276,24 +280,21 @@ header{
   filter:drop-shadow(0px 8px 3px black) ;
   z-index: -1;
   transition: all .25s ease-in;
-  
-  /* box-shadow: 5px 1px 6px black; */
   width: 300px;
-  height:250px;
+  height:auto;
   padding: 5px;
   font-family: 'Kalam', cursive;
   font-size: 1.5rem;
   position: relative;
   z-index: 3;
   color: black;
-  display:grid;
-  margin: 5px;
+  margin: 5px -5px;
 
 }
 
 
 .cardHeaderNote{
-  margin: 60px 5px 0px;
+  margin: .8rem 5px 0px;
   font-size: 1.7rem;
 
 }
@@ -384,8 +385,8 @@ header{
 
 .projectCard:hover{
   filter:drop-shadow(7px 7px 7px black) ;    
-  
   transform: rotate(0deg);
+  z-index: 4;
 }
 
 
@@ -394,7 +395,7 @@ header{
   display: flex;
   height: auto;
   flex-wrap: wrap;
-  padding: 25px;
+  padding: 20px;
   justify-content: space-around;
 }
 
@@ -412,8 +413,8 @@ header{
   position: relative;
   z-index: 3;
   color: black;
-  display:grid;
-  margin: 5px;
+
+  margin: 5px -5px;
 
 }
 
@@ -483,6 +484,8 @@ header{
 .polaroid:hover{
 filter:drop-shadow(0px 8px 3px black) grayscale(.1); 
 transform: rotate(0deg);
+position: relative;
+z-index: 4;
 
 }
 .polaroid{
@@ -493,6 +496,7 @@ transform: rotate(0deg);
   height:360px;
   width: 300px;
   padding: 5px;
+  margin: 0px -5px;
 }
 
 .polaroidImg{
@@ -542,12 +546,58 @@ transform: rotate(0deg);
     margin: 0 auto
   }
 
-  .projectCard, .projectCardNote, .todoImage{
-    width: 150px;
-
-
+  .projectCard{
+    width: 175px;
+    height: auto;
   }
 
+  .todoImage{
+    width: 175px;
+    height: 190px;
+}
+  .projectCardNote{
+    
+    width:175px
+  }
+
+  .cardHeader{
+    font-size: 1.3rem;
+    color:#3828c5;
+
+  }
+  .cardBody{
+    font-size: 1rem;
+    
+  }
+  .cardLinks{
+    font-size: 1rem;
+  }
+
+  .cardHeaderNote{
+    font-size: 1rem;
+    margin: 28px 5px 0px;
+
+  }
+  .cardBodyNote{
+    font-size: 1rem;
+    margin-left: 0px;
+
+    
+  }
+  .cardLinksNote{
+    font-size: 1rem;
+    
+  }
+
+  .polaroid{
+    width: 150px;
+    height:180px;
+
+  }
+  .polaroidImg{
+    width:inherit
+
+  }
 }
 
 @media only screen and (min-width:800px)  {

@@ -14,7 +14,7 @@ let projectLibrary = [
     "projectName": "Weather Window",
     "previewLink": "http://weather.rinkertm-portfolio.rf.gd/",
     "projectGithub": "https://github.com/RinkM/Odin12-Weather",
-    "projectDescription": "Take a look out a window. See the weather anywhere in the world!",
+    "projectDescription": "Take a look out a window and see the weather anywhere in the world!",
     "projectThumb":"images/fishAvatarSmall.png",
     },
 
@@ -23,7 +23,7 @@ let projectLibrary = [
       "projectName": "Squirrel Stash",
       "previewLink": "http://thestash.rinkertm-portfolio.rf.gd/",
       "projectGithub": "https://github.com/RinkM/Odin8.5-Library",
-      "projectDescription": "A place to store and keep track of your nuts... or games, books and movies!",
+      "projectDescription": "A place to store and keep track of your games, books and movies!",
       "projectThumb":"images/fishAvatarSmall.png",
       },
 
@@ -32,7 +32,7 @@ let projectLibrary = [
         "projectName": "Get Stuff Done",
         "previewLink": "http://todo.rinkertm-portfolio.rf.gd/",
         "projectGithub": "https://github.com/RinkM/Odin11-ToDoList-Vite",
-        "projectDescription": "Add things to your list. Do them. Swipe them away.",
+        "projectDescription": "Add things to your list. Do them. Then swipe them away.",
         "projectThumb":"images/fishAvatarSmall.png",
         },
 
@@ -58,7 +58,7 @@ let projectLibrary = [
    "projectName": "Dogs Without Laps",
    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin6-SubscriptionForm/blob/main/index.html",
    "projectGithub": "https://github.com/RinkM/Odin6-SubscriptionForm",
-   "projectDescription": "Clients can use this fictitious form to match their poor, empty lap with a dog in need.",
+   "projectDescription": "Clients can use this fictitious form to match their sad, empty lap with a dog.",
    "projectThumb":"images/projectImgs/dogIcon.png",
    },
    {
@@ -71,18 +71,18 @@ let projectLibrary = [
    },
    {
    "cardNumber": 5,
-   "projectName": "Rock, Paper, Scissors",
+   "projectName": "RPS",
    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin3-RPS/blob/main/index.html",
    "projectGithub": "https://github.com/RinkM/Odin3-RPS",
-   "projectDescription": "As the last free Human, you challenge the AI Super Computers in order to save Humanity.",
+   "projectDescription": "Challenge the AI Super Computers in order to save Humanity.",
    "projectThumb":"images/projectImgs/rpsIcon.png",
    },
    {
    "cardNumber": 7,
-   "projectName": "NooBorn Baby Tracker",
+   "projectName": "NooBorn Tracker",
    "previewLink": "https://htmlpreview.github.io/?https://github.com/RinkM/Odin3-RPS/blob/main/index.html",
    "projectGithub": "https://github.com/RinkM/Odin3-RPS",
-   "projectDescription": "Made with Python, my first app.  Tracks feeding, waste and sleep of a new baby.",
+   "projectDescription": "Tracks feeding, waste and sleep of a newborn.",
    "projectThumb": "images/fishAvatarSmall.png",
    },
 

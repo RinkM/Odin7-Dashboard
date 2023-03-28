@@ -5,8 +5,7 @@ import { randTilt } from "./makePostIts";
 function polaroid(){
 
   const projectSpace = document.getElementById("projectCardsContainer")
-  const tilt = randTilt()
-  const type = "Note";
+
 
   const projectCard = document.createElement("div");
   projectCard.setAttribute("id", `polaroidDiv` );
@@ -16,6 +15,7 @@ function polaroid(){
   const polaroidImg = new Image();
   polaroidImg.src = "images/self_hike_square.png";
   polaroidImg.alt = "A picture of me";
+  polaroidImg.classList.add(`polaroidImg`);
   
   projectCard.appendChild(polaroidImg);
   projectSpace.appendChild(projectCard);
