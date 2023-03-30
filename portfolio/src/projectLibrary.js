@@ -39,7 +39,7 @@ let projectLibrary = [
 
   {
    "cardNumber": 0,
-   "projectName": "TicTacToe + Connect 4",
+   "projectName": "Connect 4",
    "previewLink": "http://tictactoe.rinkertm-portfolio.rf.gd/",
    "projectGithub": "https://github.com/RinkM/Odin9-TicTacToe",
    "projectDescription": "Connect 3 to win.  Or on larger games, connect 4!",

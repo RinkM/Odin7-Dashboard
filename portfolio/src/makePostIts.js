@@ -20,6 +20,7 @@ function randColor (){
 
 function randNote(card){
   const num = Math.floor(Math.random()*2)
+  // num = 0
   if (num == 0){
     buildPostIts(card)
   } else {
@@ -42,8 +43,8 @@ function makePostIts () {
 
 function buildPostIts(card){
   const projectSpace = document.getElementById("projectCardsContainer")
-  // const tilt = randTilt()
-  const tilt = "tiltRight"
+  const tilt = randTilt()
+  
 
   const type = "";
 
@@ -63,8 +64,7 @@ function buildPostIts(card){
 
 function buildNotes(card){
   const projectSpace = document.getElementById("projectCardsContainer")
-  // const tilt = randTilt()
-  const tilt = "tiltLeft"
+  const tilt = randTilt()
   const type = "Note";
 
   const projectCard = document.createElement("div");

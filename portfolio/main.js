@@ -11,3 +11,15 @@ import polaroid from './src/polaroid'
 polaroid()
 makePostIts()
 addIcons()
+
+
+const projectBtn = document.getElementById("projectBtn");
+
+projectBtn.addEventListener("click", () => projectScroll())
+
+function projectScroll (){
+  const cork = document.getElementById("container--corkboard")
+  cork.scrollIntoView({behavior:"smooth"})
+}
+
+

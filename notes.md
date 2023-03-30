@@ -21,25 +21,18 @@ The book turns pages....
 
 http://weather.rinkertm-portfolio.rf.gd/
 
-.intro-text{
-    text-align: center;
-    font-size: 3em;
-    width: 0ch;
-    overflow: hidden;
-    margin: 0 auto;
-    white-space: nowrap;
-    background-image: linear-gradient(155deg, #fb7419, #bc1429, #319197);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-.intro-text.active{
-    animation: typeIn 2s steps(28) forwards;
-}
-@keyframes typeIn {
-    to { width: 28ch; }
-}
 
+
+<div class = "blackboard--body--text">
+            I am a full time middle school language teacher. Over my career, I've written and designed courses for French, English, and Public Speaking. I have presented lessons to nearly 2,000 students from over 30 different countries. I've read, edited, and assessed more tests, essays, and speeches than I care to think about! 
+          </div>
+          <div class = "blackboard--body--text"> 
+            Many of the qualities of a good teacher are the same as a good software developer. 
+            On a daily basis, I use data to support my decision making, I plan and implement lessons while always keeping the endgoal in mind, I must have a keen eye for details and deadlines,  and lastly, I enjoy solving complex problems with creative solutions.  With this experience, I have become a better developer. 
+          </div>
+          <div class = "blackboard--body--text">
+            Using The Odin Project for guidance, I have become a self-taught Software Developer with experience building apps in Python and SQL as well as coding websites with JavaScript, HTML, and CSS.  ------I have done this while...teaching, new baby, at night, exhausted?  story?
+          </div>
 
 
 # 9-4

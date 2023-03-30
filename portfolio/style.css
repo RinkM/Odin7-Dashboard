@@ -31,6 +31,17 @@ a:hover {
   color: #535bf2;
 }
 
+.navLink{
+  transition: all .3s ease-in;
+  color: white;
+  
+}
+
+.navLink:hover{
+  cursor: pointer;
+  color: #9ca0e9;
+
+}
 body {
   margin: 0;
   display: flex;
@@ -213,7 +224,7 @@ header{
 }
 
 .blackboard--text{
-  font-size: 3em;
+  font-size: 2.7em;
   margin: 2em auto;
 
 }
@@ -223,6 +234,7 @@ header{
 }
 
 #blackboard--right{
+  display: flex;
 
 }
 
@@ -230,9 +242,9 @@ header{
 #blackboard--body{
   /* border: 3pt solid white;
   border-radius: 8px; */
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding: .25em;
-  margin: .25em auto;
+  margin: auto;
 }
 
 
@@ -281,7 +293,7 @@ header{
   z-index: -1;
   transition: all .25s ease-in;
   width: 300px;
-  height:auto;
+  height:270px;
   padding: 5px;
   font-family: 'Kalam', cursive;
   font-size: 1.5rem;
@@ -294,7 +306,7 @@ header{
 
 
 .cardHeaderNote{
-  margin: .8rem 5px 0px;
+  margin: 55px 5px 0px;
   font-size: 1.7rem;
 
 }
@@ -553,10 +565,10 @@ z-index: 4;
 
   .todoImage{
     width: 175px;
-    height: 190px;
+    height: 200px;
 }
   .projectCardNote{
-    
+    height:190px;
     width:175px
   }
 
@@ -574,8 +586,10 @@ z-index: 4;
   }
 
   .cardHeaderNote{
-    font-size: 1rem;
-    margin: 28px 5px 0px;
+    font-size: 1.2rem;
+    margin: 36px 5px 0px;
+
+    font-weight: 800;
 
   }
   .cardBodyNote{
@@ -632,7 +646,7 @@ z-index: 4;
 .logoTitle{
   line-height: 1em;
   width:800px;
-  margin:auto;
+  margin:48px auto 0px;
   font-size: 4em;
   font-family: 'Indie Flower', cursive;
 
